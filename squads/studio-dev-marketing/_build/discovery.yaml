@@ -1,0 +1,34 @@
+squad_code: "studio-dev-marketing"
+purpose: "Equipe completa para desenvolver sites incríveis com animações excepcionais e qualidade absurda, revisar segurança e qualidade criticamente, e crescer um perfil profissional no Instagram para atrair clientes e construir autoridade no mercado de desenvolvimento web"
+domain: "mixed"
+
+company:
+  name: "Joao Vitor Tuni Kist — Freelancer de Sites e Automação"
+  tone: "Autoridade técnica + parceiro de crescimento — impressiona pela qualidade técnica e foca em resultados para o cliente"
+  products: "Desenvolvimento de sites com animações modernas, automações para WhatsApp, presença digital para pequenos e médios negócios"
+
+language: "Português (Brasil)"
+
+context:
+  audience: "Misto — qualquer negócio que precise de site, começando por clientes locais na cidade"
+  platforms: "Web (sites), Instagram"
+  tone: "Autoridade técnica + parceiro de crescimento"
+  tech_stack: "Misto com preferência por tecnologias de animação de alto nível (GSAP, Framer Motion, Three.js, WebGL conforme o projeto)"
+  instagram_goal: "Crescer perfil do zero, gerar autoridade, atrair leads e converter clientes — foco em Reels, copywriting estratégico e design visual impactante"
+
+tools_needed:
+  - "instagram-publisher"
+  - "image-ai-generator"
+  - "image-creator"
+  - "canva"
+  - "template-designer"
+  - "blotato"
+
+investigation:
+  enabled: false
+  profiles: []
+
+target_formats:
+  - "instagram-reels"
+  - "copywriting"
+  - "image-design"

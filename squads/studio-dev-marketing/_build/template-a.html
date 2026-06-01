@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  width:1080px;height:1920px;overflow:hidden;
+  background:#050505;
+  font-family:'Space Grotesk',sans-serif;
+  position:relative;
+}
+/* Mesh gradients — depth layers */
+.orb-1{position:absolute;top:-180px;left:-120px;width:680px;height:680px;background:radial-gradient(circle,#00E5FF0D,transparent 65%);pointer-events:none;}
+.orb-2{position:absolute;bottom:200px;right:-160px;width:560px;height:560px;background:radial-gradient(circle,#0066FF0A,transparent 65%);pointer-events:none;}
+.noise{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");opacity:.4;pointer-events:none;}
+
+/* Layout */
+.wrap{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;padding:72px 64px;}
+
+/* Header */
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:auto;}
+.profile{display:flex;align-items:center;gap:20px;}
+.avatar-shell{
+  width:72px;height:72px;border-radius:50%;
+  background:#ffffff0a;border:1px solid #ffffff12;
+  padding:3px;
+}
+.avatar-core{
+  width:100%;height:100%;border-radius:50%;
+  background:linear-gradient(135deg,#00E5FF,#0066FF);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:#fff;
+}
+.handle{font-size:28px;font-weight:500;color:#ffffff40;}
+
+/* Eyebrow */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  background:#00E5FF08;border:1px solid #00E5FF25;
+  border-radius:100px;padding:10px 28px;
+  font-size:24px;font-weight:600;color:#00E5FF;
+  letter-spacing:.15em;text-transform:uppercase;
+  margin-bottom:40px;width:fit-content;
+}
+.eyebrow-dot{width:8px;height:8px;border-radius:50%;background:#00E5FF;}
+
+/* Main content area */
+.main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:60px 0;}
+
+/* Hook text */
+.hook{
+  font-family:'Syne',sans-serif;
+  font-size:80px;font-weight:800;
+  line-height:1.05;letter-spacing:-.02em;
+  color:#fff;
+  margin-bottom:56px;
+}
+.hook .dim{color:#ffffff30;}
+.hook .accent{
+  background:linear-gradient(90deg,#00E5FF,#60CFFF);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+
+/* Divider */
+.rule{
+  width:100%;height:1px;
+  background:linear-gradient(90deg,#00E5FF30,transparent);
+  margin-bottom:56px;
+}
+
+/* Body */
+.body{font-size:36px;font-weight:400;color:#ffffff55;line-height:1.65;margin-bottom:72px;}
+.body strong{color:#ffffff90;font-weight:600;}
+
+/* Insight cards — Z-Axis cascade */
+.cards{display:flex;flex-direction:column;gap:0;position:relative;}
+.card{
+  background:#ffffff05;
+  border:1px solid #ffffff0c;
+  border-radius:20px;
+  padding:32px 40px;
+  display:flex;align-items:center;gap:28px;
+  margin-bottom:-8px;
+  position:relative;
+  transition:transform .3s;
+}
+.card:nth-child(1){z-index:3;transform:rotate(-.4deg);}
+.card:nth-child(2){z-index:2;transform:rotate(.3deg);margin-top:0;}
+.card:nth-child(3){z-index:1;transform:rotate(-.2deg);}
+.card-num{
+  font-family:'Syne',sans-serif;
+  font-size:48px;font-weight:800;color:#00E5FF20;
+  min-width:56px;
+}
+.card-text{font-size:32px;font-weight:500;color:#ffffffaa;line-height:1.4;}
+
+/* Footer */
+.footer{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:48px;border-top:1px solid #ffffff08;
+  margin-top:auto;
+}
+.footer-left{font-size:26px;color:#ffffff25;font-weight:500;}
+.footer-cta{
+  display:flex;align-items:center;gap:12px;
+  font-size:26px;font-weight:600;color:#00E5FF60;
+  letter-spacing:.05em;text-transform:uppercase;
+}
+</style>
+</head>
+<body>
+<div class="orb-1"></div>
+<div class="orb-2"></div>
+<div class="noise"></div>
+
+<div class="wrap">
+  <div class="header">
+    <div class="profile">
+      <div class="avatar-shell"><div class="avatar-core">JT</div></div>
+      <span class="handle">@jaokdev</span>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="eyebrow"><div class="eyebrow-dot"></div>Web Development</div>
+
+    <h1 class="hook">
+      Seu site<br>
+      <span class="dim">está</span><br>
+      <span class="accent">afastando</span><br>
+      clientes
+    </h1>
+
+    <div class="rule"></div>
+
+    <p class="body">
+      Não é o produto. Não é o preço.<br>
+      É o site que <strong>rejeita antes</strong><br>de o cliente ler uma linha.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <span class="card-num">01</span>
+        <span class="card-text">Carregamento acima de 3s = abandono</span>
+      </div>
+      <div class="card">
+        <span class="card-num">02</span>
+        <span class="card-text">Design genérico = zero credibilidade</span>
+      </div>
+      <div class="card">
+        <span class="card-num">03</span>
+        <span class="card-text">Sem animação = presença invisível</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">@jaokdev · Sites & Automação</span>
+    <span class="footer-cta">ARRASTE →</span>
+  </div>
+</div>
+</body>
+</html>

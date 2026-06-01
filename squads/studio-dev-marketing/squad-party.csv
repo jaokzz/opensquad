@@ -1,0 +1,7 @@
+id,name,title,icon,execution,path
+studio-dev-marketing/agents/andre-animacao,André Animação,Desenvolvedor Web Sênior,🖥️,inline,./agents/andre-animacao.agent.md
+studio-dev-marketing/agents/sandro-seguranca,Sandro Segurança,Auditor de Segurança Web,🔒,inline,./agents/sandro-seguranca.agent.md
+studio-dev-marketing/agents/lucas-leads,Lucas Leads,Estrategista de Marketing Digital,📊,inline,./agents/lucas-leads.agent.md
+studio-dev-marketing/agents/gabriela-gancho,Gabriela Gancho,Copywriter de Reels,✍️,inline,./agents/gabriela-gancho.agent.md
+studio-dev-marketing/agents/daniela-design,Daniela Design,Criadora Visual,🎨,inline,./agents/daniela-design.agent.md
+studio-dev-marketing/agents/caio-critico,Caio Crítico,Revisor Estratégico,⚡,inline,./agents/caio-critico.agent.md
