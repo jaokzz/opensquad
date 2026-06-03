@@ -1,0 +1,6 @@
+id,name,title,icon,execution,path
+apostas-esportivas/agents/rafael-rodrigues,Rafael Rodrigues,Pesquisador de Dados Esportivos,🔍,subagent,./agents/rafael-rodrigues.agent.md
+apostas-esportivas/agents/adriana-azevedo,Adriana Azevedo,Analista de Confrontos Pré-Jogo,📊,inline,./agents/adriana-azevedo.agent.md
+apostas-esportivas/agents/valter-vieira,Valter Vieira,Caçador de Value e Compositor de Múltiplas,🎯,inline,./agents/valter-vieira.agent.md
+apostas-esportivas/agents/marcos-monteiro,Marcos Monteiro,Monitor de Apostas ao Vivo,📡,inline,./agents/marcos-monteiro.agent.md
+apostas-esportivas/agents/camila-campos,Camila Campos,Revisora Crítica de Apostas,✅,inline,./agents/camila-campos.agent.md

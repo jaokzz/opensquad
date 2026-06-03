@@ -1,0 +1,22 @@
+name: "Squad Apostas Esportivas"
+code: "apostas-esportivas"
+description: "Squad completo de apostas esportivas — análise pré-jogo, monitoramento ao vivo e caça de value bets. Foco na Copa do Mundo 2026 com estratégia de múltiplas odd 14-20x, R$150 por entrada nas casas Superbet e Betano."
+version: "1.0.0"
+
+skills:
+  - web_search
+  - web_fetch
+
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+
+memory:
+  - _memory/memories.md
+  - _memory/runs.md
+
+pipeline: pipeline/pipeline.yaml
+party: squad-party.csv
