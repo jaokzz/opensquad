@@ -48,6 +48,14 @@ Freelancer que desenvolve sites e automações para WhatsApp, atuando no tempo l
 - Instagram: em criação
 - WhatsApp: canal principal de vendas
 
+## Projetos Entregues / Em Andamento
+
+| Projeto | Cliente | Stack | Status | Path |
+|---------|---------|-------|--------|------|
+| Armazém Bar e Burguer v1 | Armazém Burgers (Iporã do Oeste) | HTML + GSAP ScrollTrigger | Entregue | `squads/studio-dev-marketing/output/armazem-site/` |
+| Armazém Bar e Burguer v2 | Armazém Burgers (Iporã do Oeste) | Next.js 15 + Tailwind | Em produção | `squads/studio-dev-marketing/output/armazem-site-v2/` |
+| MP Team Site | Pietra Giehl | Next.js | Proposta enviada | `squads/studio-dev-marketing/output/2026-05-28-205647/mp-team-site/` |
+
 ## Contexto Estratégico
 
 Joao Vitor está na fase inicial de escalar seu freelance. O foco atual é:
