@@ -1,0 +1,28 @@
+squad_code: "apostas-esportivas"
+purpose: "Squad completo de apostas esportivas — análise pré-jogo detalhada, monitoramento ao vivo de apostas abertas e caça contínua de oportunidades de valor em qualquer competição disponível nas casas de aposta. Foco principal na Copa do Mundo 2026."
+domain: "research"
+
+company:
+  name: "Joao Vitor Tuni Kist — Freelancer de Sites e Automação"
+  tone: "Direto e próximo, linguagem acessível, transmite confiança"
+  products: "Desenvolvimento de sites e automações para WhatsApp"
+
+language: "Português (Brasil)"
+
+context:
+  audience: "Uso pessoal — Joao Vitor apostando nas casas Superbet e Betano"
+  strategy: "Múltiplas com odd alvo 14-20x, R$150 por entrada"
+  tone: "Analítico mas acessível — explica o raciocínio como um analista experiente conversando"
+  competitions: "Copa do Mundo 2026 (foco principal) + qualquer jogo com boa oportunidade disponível nas casas"
+  bookmakers: ["Superbet", "Betano"]
+  monitoring: "Pré-jogo completo + monitoramento ao vivo de apostas abertas"
+  data_sources: "Sites públicos de estatísticas (SofaScore, Fbref, WhoScored, Transfermarkt) + variações de odds nas casas"
+
+tools_needed:
+  - web_search
+  - web_fetch
+
+investigation:
+  enabled: false
+
+target_formats: []

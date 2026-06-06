@@ -7,5 +7,9 @@
       "Edit(/.claude/skills/opensquad-dev/**)"
     ]
   },
-  "outputStyle": "default"
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
+  "outputStyle": "default",
+  "enableAllProjectMcpServers": true
 }
