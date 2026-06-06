@@ -1,0 +1,32 @@
+id: betting-analyst-pipeline
+name: "Pipeline de Análise e Apostas"
+version: "1.0.0"
+
+steps:
+  - id: step-01-briefing
+    file: steps/step-01-briefing.md
+    agent: rafael-radar
+    checkpoint: false
+
+  - id: step-02-coletar-dados
+    file: steps/step-02-coletar-dados.md
+    agent: diana-dados
+    checkpoint: false
+    parallel: true
+
+  - id: step-03-analisar-value
+    file: steps/step-03-analisar-value.md
+    agent: rafael-radar
+    checkpoint: true
+    checkpoint_message: "Rafael apresenta análise individual de cada jogo. Aprovação necessária antes de construir as múltiplas."
+
+  - id: step-04-construir-multiplas
+    file: steps/step-04-construir-multiplas.md
+    agent: marco-multiplas
+    checkpoint: false
+
+  - id: step-05-revisao-final
+    file: steps/step-05-revisao-final.md
+    agent: rafael-radar
+    checkpoint: true
+    checkpoint_message: "Bilhetes finais prontos. Rafael apresenta a recomendação completa. Checkpoint antes de você apostar na Betano."

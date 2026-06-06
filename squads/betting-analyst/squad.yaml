@@ -1,0 +1,33 @@
+id: betting-analyst
+name: "Betting Analyst"
+description: "Squad especializado em análise de futebol e construção de apostas múltiplas de alto valor para Betano"
+version: "1.0.0"
+language: "pt-BR"
+created_at: "2026-06-06"
+
+agents:
+  - id: rafael-radar
+    file: agents/rafael-radar.agent.md
+    role: lead
+  - id: diana-dados
+    file: agents/diana-dados.agent.md
+    role: specialist
+  - id: marco-multiplas
+    file: agents/marco-multiplas.agent.md
+    role: specialist
+
+pipeline:
+  file: pipeline/pipeline.yaml
+
+memory:
+  file: _memory/memories.md
+
+output_dir: output/
+
+triggers:
+  - "analisar jogos"
+  - "apostas de hoje"
+  - "multipla"
+  - "betano"
+  - "previsão"
+  - "odds"

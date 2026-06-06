@@ -32,6 +32,9 @@ skills:
   - second-opinion
   - supply-chain-risk-auditor
   - antipattern-detector
+  - email-sales
+  - whatsapp-broadcast
+  - data-analysis
 
 data:
   - pipeline/data/research-brief.md

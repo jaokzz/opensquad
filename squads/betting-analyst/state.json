@@ -1,0 +1,14 @@
+{
+  "squad": "betting-analyst",
+  "status": "completed",
+  "step": { "current": 5, "total": 5, "label": "step-05-revisao-final" },
+  "agents": [
+    { "id": "rafael-radar", "name": "Rafael Radar", "icon": "⚽", "status": "done", "desk": { "col": 1, "row": 1 } },
+    { "id": "diana-dados", "name": "Diana Dados", "icon": "📊", "status": "done", "desk": { "col": 2, "row": 1 } },
+    { "id": "marco-multiplas", "name": "Marco Múltiplas", "icon": "🎯", "status": "done", "desk": { "col": 3, "row": 1 } }
+  ],
+  "handoff": null,
+  "startedAt": "2026-06-06T14:55:00Z",
+  "completedAt": "2026-06-06T15:10:00Z",
+  "updatedAt": "2026-06-06T15:10:00Z"
+}
