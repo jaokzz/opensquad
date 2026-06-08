@@ -45,3 +45,4 @@
 - Stack web: Next.js + Tailwind + Motion/GSAP + Three.js/R3F para projetos premium
 - Pipeline principal: briefing → 5 ângulos → seleção → roteiro+legenda → cover design → revisão → aprovação → publicação
 - Execução: todos os agentes inline (mesma sessão Claude)
+- **Modo de uso do squad:** não é só "produção de Reels" — é assistente de desenvolvimento, prospecção e conteúdo. O briefing inicial pergunta "o que vamos desenvolver hoje" (dev, prospecção, post, estratégia), não "qual é o tema do Reel"

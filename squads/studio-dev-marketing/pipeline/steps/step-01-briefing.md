@@ -3,27 +3,32 @@ type: checkpoint
 outputFile: squads/studio-dev-marketing/output/content-brief.md
 ---
 
-# Step 01: Briefing de Conteúdo
+# Step 01: Briefing
 
-Bem-vindo ao **Studio Dev Marketing** — seu squad de conteúdo para Instagram.
-
-Antes de gerar os ângulos estratégicos, preciso entender o que você quer criar hoje.
+Bem-vindo ao **Studio Dev Marketing** — seu squad de desenvolvimento, prospecção e conteúdo.
 
 **Empresa:** João Tuni | Sites & Automação (@jaokdev)
 
 ---
 
-## Qual é o tema do Reel de hoje?
+## O que vamos desenvolver hoje?
 
-Descreva em 1-3 frases:
-- Qual assunto você quer abordar?
-- Tem algum objetivo específico? (mostrar serviço, gerar lead, ensinar algo, contar bastidores)
-- Tem alguma referência ou ideia de formato?
+Pode ser qualquer coisa — desenvolvimento, prospecção, conteúdo, estratégia:
 
-**Exemplos:**
-- "Quero falar sobre por que sites lentos afastam clientes"
-- "Quero mostrar como funciona automação de WhatsApp"
-- "Quero contar que comecei a desenvolver sites trabalhando de dia em borracharia"
-- "Quero fazer um Reel mostrando um site que construí com animações"
+**Desenvolvimento web:**
+- "Quero continuar o site do Armazém v2 — preciso adicionar a seção de pizzas"
+- "Quero construir uma landing page para um novo cliente"
 
-Digite seu briefing abaixo:
+**Prospecção de clientes:**
+- "Quero montar um script de abordagem para a Manu Fisioterapia"
+- "Quero preparar uma proposta para a Academia da Adri"
+
+**Conteúdo para Instagram:**
+- "Quero criar um Reel mostrando o site do Armazém que construí"
+- "Quero um carrossel ensinando por que sites lentos afastam clientes"
+
+**Estratégia e melhoria:**
+- "Quero revisar meu posicionamento no Instagram"
+- "Quero analisar quais leads do meu mapeamento devo priorizar"
+
+Descreva o que você quer fazer:
