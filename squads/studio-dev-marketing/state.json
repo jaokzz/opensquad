@@ -1,16 +1,19 @@
 {
   "squad": "studio-dev-marketing",
-  "status": "idle",
-  "step": { "current": 0, "total": 9, "label": "" },
+  "status": "running",
+  "step": { "current": 1, "total": 9, "label": "step-01-briefing" },
   "agents": [
     { "id": "andre-animacao",  "name": "André Animação",  "icon": "🖥️", "status": "idle", "desk": { "col": 1, "row": 1 } },
     { "id": "sandro-seguranca","name": "Sandro Segurança","icon": "🔒", "status": "idle", "desk": { "col": 2, "row": 1 } },
     { "id": "lucas-leads",     "name": "Lucas Leads",     "icon": "📊", "status": "idle", "desk": { "col": 3, "row": 1 } },
     { "id": "gabriela-gancho", "name": "Gabriela Gancho", "icon": "✍️", "status": "idle", "desk": { "col": 1, "row": 2 } },
     { "id": "daniela-design",  "name": "Daniela Design",  "icon": "🎨", "status": "idle", "desk": { "col": 2, "row": 2 } },
-    { "id": "caio-critico",    "name": "Caio Crítico",    "icon": "⚡", "status": "idle", "desk": { "col": 3, "row": 2 } }
+    { "id": "caio-critico",    "name": "Caio Crítico",    "icon": "⚡", "status": "idle", "desk": { "col": 3, "row": 2 } },
+    { "id": "pedro-prospecta", "name": "Pedro Prospecta", "icon": "🎯", "status": "idle", "desk": { "col": 1, "row": 3 } },
+    { "id": "marco-maestro",   "name": "Marco Maestro",   "icon": "🧩", "status": "idle", "desk": { "col": 2, "row": 3 } },
+    { "id": "valentina-video", "name": "Valentina Vídeo", "icon": "🎬", "status": "idle", "desk": { "col": 3, "row": 3 } }
   ],
   "handoff": null,
-  "startedAt": null,
-  "updatedAt": "2026-05-29T13:09:44.000Z"
+  "startedAt": "2026-06-08T12:25:43.000Z",
+  "updatedAt": "2026-06-08T12:25:43.000Z"
 }

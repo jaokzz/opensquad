@@ -98,7 +98,7 @@ Marco comunica de forma concisa e estruturada. Quando recebe uma tarefa, apresen
 - **Reads from**: todos os agent files do squad, `pipeline/pipeline.yaml`, `_opensquad/_memory/company.md`, briefing do usuário
 - **Writes to**: `_memory/runs.md`, `output/orchestration-log-{date}.md`
 - **Triggers**: quando usuário quer executar qualquer tarefa multi-agente, ou quando pede ao squad sem especificar qual agente
-- **Coordinates**: André Animação, Sandro Segurança, Lucas Leads, Gabriela Gancho, Daniela Design, Caio Crítico, Pedro Prospecta, Valentina Vídeo
+- **Coordinates**: André Animação, Sandro Segurança, Lucas Leads, Gabriela Gancho, Daniela Design, Caio Crítico, Pedro Prospecta, Valentina Vídeo, Nara Narrativa
 
 ## Mapa de Agentes
 
@@ -112,6 +112,7 @@ Marco comunica de forma concisa e estruturada. Quando recebe uma tarefa, apresen
 | ⚡ Caio Crítico | Revisão com score, APROVAR/REJEITAR | Antes de qualquer aprovação final |
 | 🎯 Pedro Prospecta | Scripts de prospecção, qualificação de leads | Quando João Vitor quer abordar lead local |
 | 🎬 Valentina Vídeo | Geração de vídeo IA via Higgsfield — scroll scrubbing, hero, loop de produto | Quando site precisa de asset de vídeo 4-8s |
+| 💌 Nara Narrativa | Vendas emocionais, carta premium física, diagnóstico de dores de negócio | Quando João Vitor quer prospectar com carta personalizada entregue presencialmente |
 
 ## Fluxos Predefinidos
 
@@ -128,6 +129,16 @@ André Animação (briefing + build) → Sandro Segurança (auditoria) → [chec
 ### Fluxo: Prospectar Lead Local
 ```
 Pedro Prospecta (qualificação + script) → [checkpoint: aprovar script] → Execução pelo João Vitor
+```
+
+### Fluxo: Carta Premium (Prospecção Presencial Emocional)
+```
+Pedro Prospecta (qualificar lead + definir contexto) → Nara Narrativa (diagnóstico emocional) → [checkpoint: validar diagnóstico] → Nara Narrativa (gerar carta + instruções envelope) → [checkpoint: aprovar carta] → Impressão + Entrega pelo João Vitor
+```
+
+### Fluxo: Campanha Envelope + Site (do zero ao fechamento)
+```
+Pedro Prospecta (qualificar top leads) → Nara Narrativa (diagnóstico + cartas para todos os leads) [paralelo] → [checkpoint: aprovar cartas] → Entrega presencial pelo João Vitor → [após interesse confirmado] → André Animação (site) → Sandro Segurança (auditoria) → Deploy
 ```
 
 ### Fluxo: Campanha Completa (Site + Conteúdo + Prospecção)
