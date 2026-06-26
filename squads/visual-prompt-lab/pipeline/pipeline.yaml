@@ -1,0 +1,19 @@
+name: "Pipeline de Geração de Imagens para Sites"
+squad: "visual-prompt-lab"
+version: "1.0.0"
+
+steps:
+  - file: steps/step-01-briefing.md
+  - file: steps/step-02-conceitos-visuais.md
+  - file: steps/step-03-escolher-direcao.md
+  - file: steps/step-04-engenharia-prompt.md
+  - file: steps/step-05-aprovacao-prompt.md
+  - file: steps/step-06-geracao-imagem.md
+  - file: steps/step-07-revisao-vera.md
+  - file: steps/step-08-entrega-final.md
+
+checkpoints:
+  - step-01-briefing
+  - step-03-escolher-direcao
+  - step-05-aprovacao-prompt
+  - step-08-entrega-final
