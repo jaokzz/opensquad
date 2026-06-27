@@ -48,17 +48,17 @@ html.lenis, html.lenis body { height: auto; }
 
 /* ─── Typography scale ───────────────────────── */
 .display-xl {
-  font-size: clamp(3.5rem, 9vw, 8.5rem);
+  font-size: clamp(2.4rem, 6vw, 5.5rem);
   line-height: 0.92;
   letter-spacing: -0.02em;
 }
 .display-lg {
-  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   line-height: 0.95;
   letter-spacing: -0.02em;
 }
 .display-md {
-  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  font-size: clamp(1.3rem, 2.5vw, 2.4rem);
   line-height: 1.05;
   letter-spacing: -0.015em;
 }
@@ -98,8 +98,9 @@ html.lenis, html.lenis body { height: auto; }
 
 /* ─── CTA pulse ──────────────────────────────── */
 @keyframes ctaPulse {
-  0%,100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
-  50%      { box-shadow: 0 0 0 14px rgba(34,197,94,0); }
+  0%   { box-shadow: 0 0 0 0 rgba(34,197,94,0.45); }
+  70%  { box-shadow: 0 0 0 14px rgba(34,197,94,0); }
+  100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
 }
 .cta-ring {
   animation: ctaPulse 2.5s ease-in-out infinite;

@@ -5,15 +5,18 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-zinc-950 border-t border-zinc-800/60 py-16">
+    <footer className="bg-zinc-950 border-t border-zinc-800/60 py-10">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
 
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <span className="font-display font-semibold text-2xl tracking-widest text-zinc-50 uppercase">
-              Aura Fit
-            </span>
+            <img
+              src="/aurafitlogo-branca.svg"
+              alt="Aura Fit"
+              className="h-10 w-auto object-contain block"
+              draggable={false}
+            />
             <p className="font-sans text-xs text-zinc-500 leading-relaxed max-w-xs">
               Moda fitness feminina e masculina. Energia que veste. Iporã do Oeste · SC.
             </p>
@@ -49,7 +52,7 @@ export default function Footer() {
                 <li key={p}>
                   <a
                     href="#produtos"
-                    className="font-sans text-xs text-zinc-500 hover:text-zinc-200 transition-colors duration-200"
+                    className="font-sans text-xs text-zinc-500 hover:text-zinc-200 transition-colors duration-200 py-1 block"
                   >
                     {p}
                   </a>

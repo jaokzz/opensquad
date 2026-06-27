@@ -6,7 +6,7 @@ import { getGeneralWhatsAppLink } from "@/lib/whatsapp";
 
 export default function CTAFinal() {
   return (
-    <section className="relative py-32 bg-surface overflow-hidden">
+    <section className="relative py-16 bg-surface overflow-hidden">
       {/* Strong glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-green-brand/10 blur-[120px]" />
@@ -39,8 +39,8 @@ export default function CTAFinal() {
           transition={{ delay: 0.15, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-zinc-400 text-sm leading-relaxed max-w-md"
         >
-          Fale com a gente no WhatsApp, diga o que você precisa e nós cuidamos de tudo —
-          desde o tamanho certo até a entrega na sua porta.
+          Viu algo que gostou? Manda mensagem, a gente responde na hora com
+          disponibilidade, tamanhos e tudo que você precisar saber.
         </motion.p>
 
         <motion.div
@@ -71,7 +71,7 @@ export default function CTAFinal() {
           </a>
         </motion.div>
 
-        {/* Divider monogram */}
+        {/* Divider logo */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -79,7 +79,7 @@ export default function CTAFinal() {
           transition={{ delay: 0.5, duration: 1 }}
           className="mt-8 opacity-10"
         >
-          <span className="font-display font-light text-[8rem] leading-none text-zinc-50 select-none">A</span>
+          <img src="/aurafitlogo-branca.svg" alt="" aria-hidden className="h-40 w-auto object-contain block" draggable={false} />
         </motion.div>
       </div>
     </section>

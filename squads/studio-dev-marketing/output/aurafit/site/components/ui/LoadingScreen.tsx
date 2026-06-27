@@ -27,19 +27,27 @@ export default function LoadingScreen() {
             transition={{ duration: 0.4 }}
             className="flex flex-col items-center gap-4"
           >
-            <div className="relative w-16 h-16 rounded-full border border-green-brand/40 flex items-center justify-center">
+            <div className="relative w-20 h-20 flex items-center justify-center">
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-0 rounded-full border-t border-green-brand"
+                className="absolute inset-0 rounded-full border-t border-green-brand/60"
               />
-              <span className="font-display font-bold text-2xl text-green-brand">A</span>
+              <img
+                src="/aurafitlogo-verde.svg"
+                alt="Aura Fit"
+                className="w-12 h-12 object-contain"
+                draggable={false}
+              />
             </div>
 
             <div className="flex flex-col items-center gap-1">
-              <span className="font-display font-semibold text-xl tracking-widest text-zinc-50 uppercase">
-                Aura Fit
-              </span>
+              <img
+                src="/aurafitlogo-branca.svg"
+                alt="Aura Fit"
+                className="h-6 w-auto object-contain"
+                draggable={false}
+              />
               <span className="font-sans text-xs text-zinc-600 tracking-[0.3em] uppercase">
                 Moda Fitness
               </span>

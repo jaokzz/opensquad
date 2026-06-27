@@ -10,50 +10,54 @@ const PRODUCTS = [
     name: "Leggings AuraFit",
     tag: "Mais vendido",
     desc: "Compressão progressiva, cintura alta e tecido que não fica transparente. Para todas as formas.",
-    img: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&q=90&fit=crop",
+    img: "/ld_aurafit_1781052957_3916078481204069505_75045595205.jpg",
     span: "lg:col-span-2 lg:row-span-2",
-    aspect: "aspect-[4/5] lg:h-full",
-    textSize: "text-3xl",
+    aspect: "aspect-[3/4] lg:h-full",
+    textSize: "text-2xl lg:text-3xl",
+    objPos: "50% 35%",
   },
   {
     id: "tops",
     name: "Tops & Blusas",
     tag: "Feminino",
     desc: "Do sutiã esportivo ao cropped — suporte e estilo sem escolher um.",
-    img: "https://images.unsplash.com/photo-1571945190478-dc1245d96e48?w=600&q=85&fit=crop",
+    img: "/ld_aurafit_1781302698_3918173461360071746_75045595205.jpg",
     span: "lg:col-span-1",
-    aspect: "aspect-[4/3]",
-    textSize: "text-2xl",
+    aspect: "aspect-[3/4]",
+    textSize: "text-xl lg:text-2xl",
+    objPos: "50% 0%",
   },
   {
     id: "conjuntos",
     name: "Conjuntos Femininos",
     tag: "Combo",
     desc: "Top + legging combinados. Sai pronta do vestiário.",
-    img: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=85&fit=crop",
+    img: "/ld_aurafit_1781052325_3916073176718200934_75045595205.jpg",
     span: "lg:col-span-1",
-    aspect: "aspect-[4/3]",
-    textSize: "text-2xl",
+    aspect: "aspect-[3/4]",
+    textSize: "text-xl lg:text-2xl",
+    objPos: "50% 20%",
   },
   {
     id: "masculino",
     name: "Linha Masculina AuraFit",
     tag: "Masculino",
     desc: "Shorts e camisetas dry-fit que não limitam seu treino nem seu estilo.",
-    img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=85&fit=crop",
+    img: "/ld_aurafit_1781655414_3921132257434695854_75045595205.jpg",
     span: "lg:col-span-3",
-    aspect: "aspect-[16/6]",
-    textSize: "text-3xl",
+    aspect: "aspect-[3/4] lg:aspect-[16/6]",
+    textSize: "text-2xl lg:text-3xl",
+    objPos: "50% 50%",
   },
 ];
 
 function ProductCard({ product, index }: { product: typeof PRODUCTS[0]; index: number }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 0, y: -40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ delay: index * 0.08, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ delay: index * 0.15, duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
       className={`${product.span} group`}
     >
       <a
@@ -70,6 +74,7 @@ function ProductCard({ product, index }: { product: typeof PRODUCTS[0]; index: n
               src={product.img}
               alt={product.name}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+              style={{ objectPosition: product.objPos }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/30 to-transparent" />
 
@@ -105,8 +110,8 @@ function ProductCard({ product, index }: { product: typeof PRODUCTS[0]; index: n
 
 export default function Products() {
   return (
-    <section id="produtos" className="relative py-28 bg-bg overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 mb-14">
+    <section id="produtos" className="relative py-16 bg-bg overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 mb-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -127,7 +132,7 @@ export default function Products() {
       </div>
 
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 auto-rows-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
           {PRODUCTS.map((p, i) => (
             <ProductCard key={p.id} product={p} index={i} />
           ))}

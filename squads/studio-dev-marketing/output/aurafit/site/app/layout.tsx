@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   description:
     "Energia que veste. Moda fitness feminina e masculina do treino ao lifestyle. Leggings, tops e conjuntos que modelam, abraçam e duram. Fale no WhatsApp.",
   keywords: ["moda fitness", "leggings", "conjunto fitness", "roupa academia", "Iporã do Oeste", "Aura Fit"],
+  icons: {
+    icon: "/aurafitlogo-branca.svg",
+    apple: "/aurafitlogo-branca.svg",
+  },
   openGraph: {
     title: "Aura Fit — Do treino à vida real.",
     description: "Moda fitness feminina & masculina. Energia que veste. Iporã do Oeste · SC.",

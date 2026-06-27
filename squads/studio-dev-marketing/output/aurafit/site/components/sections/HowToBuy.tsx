@@ -20,14 +20,14 @@ const STEPS = [
   {
     n: "03",
     Icon: Package,
-    title: "Receba em casa",
-    desc: "Confirmamos tamanho, cor e modelo. Enviamos para todo o Brasil ou retire em Iporã do Oeste.",
+    title: "Confirme e garanta",
+    desc: "A gente responde com disponibilidade, tamanhos e valores. É só confirmar e a peça é sua.",
   },
 ];
 
 export default function HowToBuy() {
   return (
-    <section id="como-comprar" className="relative py-28 bg-surface overflow-hidden">
+    <section id="como-comprar" className="relative py-16 bg-surface overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-green-brand/5 blur-[140px]" />
       </div>
@@ -38,7 +38,7 @@ export default function HowToBuy() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-20 max-w-xl"
+          className="mb-12 max-w-xl"
         >
           <p className="font-sans text-xs font-semibold tracking-[0.25em] uppercase text-green-brand mb-4">
             — Como comprar

@@ -7,7 +7,7 @@ import { getGeneralWhatsAppLink } from "@/lib/whatsapp";
 
 const NAV_LINKS = [
   { label: "Produtos", href: "#produtos" },
-  { label: "Como comprar", href: "#como-comprar" },
+  { label: "Instagram", href: "https://www.instagram.com/ld_aurafit" },
 ];
 
 export default function Navbar() {
@@ -29,58 +29,75 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ── Floating pill nav ── */}
+      {/* ── Header fixo full-width ── */}
       <motion.header
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-6 px-5 py-3 rounded-full transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 lg:px-10 h-16 transition-all duration-500 ${
           scrolled
-            ? "glass shadow-[0_8px_32px_rgba(0,0,0,0.6)]"
-            : "bg-zinc-950/60 backdrop-blur-md border border-zinc-800/60"
+            ? "bg-zinc-950/90 backdrop-blur-xl border-b border-zinc-800/60 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
+            : "bg-transparent"
         }`}
-        style={{ width: "min(720px, calc(100vw - 2rem))" }}
       >
-        {/* Logo */}
+        {/* Logo — esquerda */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="font-display font-semibold text-lg tracking-widest text-zinc-50 uppercase shrink-0"
+          aria-label="Aura Fit — início"
+          className="shrink-0 flex items-center self-center"
         >
-          Aura Fit
+          <img
+            src="/aurafitlogo-branca.svg"
+            alt="Aura Fit"
+            className="h-10 w-auto object-contain block"
+            draggable={false}
+          />
         </button>
 
-        {/* Desktop links */}
-        <nav className="hidden md:flex items-center gap-5 flex-1 justify-center">
-          {NAV_LINKS.map((l) => (
-            <button
-              key={l.label}
-              onClick={() => scrollTo(l.href)}
-              className="font-sans text-xs font-medium tracking-widest uppercase text-zinc-400 hover:text-zinc-50 transition-colors duration-200"
-            >
-              {l.label}
-            </button>
-          ))}
+        {/* Links — centro (desktop) */}
+        <nav className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+          {NAV_LINKS.map((l) =>
+            l.href.startsWith("http") ? (
+              <a
+                key={l.label}
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-xs font-medium tracking-widest uppercase text-zinc-400 hover:text-zinc-50 transition-colors duration-200"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <button
+                key={l.label}
+                onClick={() => scrollTo(l.href)}
+                className="font-sans text-xs font-medium tracking-widest uppercase text-zinc-400 hover:text-zinc-50 transition-colors duration-200"
+              >
+                {l.label}
+              </button>
+            )
+          )}
         </nav>
 
-        {/* CTA */}
-        <a
-          href={getGeneralWhatsAppLink()}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center gap-2 bg-green-brand text-zinc-950 font-sans text-xs font-bold tracking-widest uppercase rounded-full px-4 py-2 hover:bg-green-light transition-colors duration-200 shrink-0"
-        >
-          <MessageCircle size={12} strokeWidth={2.5} />
-          WhatsApp
-        </a>
-
-        {/* Mobile hamburger */}
-        <button
-          onClick={() => setOpen((v) => !v)}
-          className="ml-auto md:hidden text-zinc-300 hover:text-zinc-50 transition-colors"
-          aria-label={open ? "Fechar menu" : "Abrir menu"}
-        >
-          {open ? <X size={20} /> : <Menu size={20} />}
-        </button>
+        {/* CTA + hamburger — direita */}
+        <div className="flex items-center gap-3 shrink-0">
+          <a
+            href={getGeneralWhatsAppLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex items-center gap-2 bg-green-brand text-zinc-950 font-sans text-xs font-bold tracking-widest uppercase rounded-full px-5 py-2.5 hover:bg-green-light transition-colors duration-200"
+          >
+            <MessageCircle size={13} strokeWidth={2.5} />
+            WhatsApp
+          </a>
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="md:hidden text-zinc-300 hover:text-zinc-50 transition-colors p-2.5"
+            aria-label={open ? "Fechar menu" : "Abrir menu"}
+          >
+            {open ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </motion.header>
 
       {/* ── Mobile overlay ── */}
@@ -100,7 +117,14 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.05 * i + 0.05, ease: [0.16, 1, 0.3, 1] }}
-                onClick={() => scrollTo(l.href)}
+                onClick={() => {
+                  if (l.href.startsWith("http")) {
+                    setOpen(false);
+                    window.open(l.href, "_blank", "noopener,noreferrer");
+                  } else {
+                    scrollTo(l.href);
+                  }
+                }}
                 className="font-display text-5xl font-light italic text-zinc-50 hover:text-green-brand transition-colors duration-200"
               >
                 {l.label}
