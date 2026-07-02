@@ -36,6 +36,8 @@ data:
   - pipeline/data/output-examples.md
   - pipeline/data/anti-patterns.md
   - pipeline/data/tone-of-voice.md
+  - pipeline/data/autopilot-mode.md
+  - pipeline/data/content-pillars.md
 
 agents:
   - id: researcher
