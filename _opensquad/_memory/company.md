@@ -45,7 +45,7 @@ Freelancer que desenvolve sites e automações para WhatsApp, atuando no tempo l
 
 ## Redes Sociais
 
-- Instagram: em criação
+- Instagram: [@jaokdev](https://instagram.com/jaokdev)
 - WhatsApp: canal principal de vendas
 
 ## Projetos Entregues / Em Andamento
@@ -62,3 +62,4 @@ Joao Vitor está na fase inicial de escalar seu freelance. O foco atual é:
 1. Criar e crescer perfil no Instagram com conteúdo de valor
 2. Gerar provas sociais (cases, depoimentos)
 3. Converter seguidores e contatos locais em clientes pagantes
+4. Produzir carrosséis de autoridade (sites/automação para negócio local) via `squads/instagram-carrossel` — squad adaptado em 2026-07-01 para esse fim

@@ -1,0 +1,69 @@
+name: "Fábrica de Carrosséis"
+code: "instagram-carrossel"
+description: >
+  Transforma qualquer texto, notícia ou ideia em um carrossel de Instagram visual,
+  didático e memorável para o perfil profissional do Joao Vitor (sites e automação
+  de WhatsApp para negócios locais) — com dados reais, autoridade prática e
+  publicação automática via API. Do tema à publicação em um único pipeline.
+icon: "📸"
+version: "1.1.0"
+created: "2026-03-03"
+adapted: "2026-07-01"
+mode: "alta-performance"
+
+company: "_opensquad/_memory/company.md"
+preferences: "_opensquad/_memory/preferences.md"
+memory: "_memory/memories.md"
+
+target_audience: >
+  Donos e gestores de pequenas e médias empresas locais (comércios, prestadores
+  de serviço, clínicas) que ainda não têm presença digital forte ou atendimento
+  automatizado — o público que vira cliente do Joao Vitor, não um público de pares tech.
+platform: "Instagram Feed"
+format: "instagram-feed"
+performance_mode: "alta-performance"
+
+skills:
+  - web_search
+  - web_fetch
+  - image-creator
+  - instagram-publisher
+
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+  - pipeline/data/tone-of-voice.md
+
+agents:
+  - id: researcher
+    name: "Ângela Ângulo"
+    icon: "🔍"
+    custom: agents/researcher.custom.md
+
+  - id: copywriter
+    name: "Carlos Carrossel"
+    icon: "✍️"
+    custom: agents/copywriter.custom.md
+
+  - id: image-designer
+    name: "Davi Design"
+    icon: "🎨"
+    custom: agents/image-designer.custom.md
+
+  - id: reviewer
+    name: "Vera Veredito"
+    icon: "✅"
+    custom: agents/reviewer.custom.md
+
+  - id: publisher
+    name: "Paula Post"
+    icon: "📤"
+    custom: agents/publisher.custom.md
+
+pipeline:
+  entry: pipeline/pipeline.yaml
+
+output_dir: output/
