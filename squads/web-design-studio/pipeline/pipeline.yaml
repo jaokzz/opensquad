@@ -1,0 +1,24 @@
+name: "Pipeline de Criação de Sites Premium"
+squad: "web-design-studio"
+version: "1.0.0"
+
+steps:
+  - file: steps/step-01-briefing.md
+  - file: steps/step-02-dna-visual.md
+  - file: steps/step-03-aprovar-dna.md
+  - file: steps/step-04-sistema-design.md
+  - file: steps/step-05-wireframe.md
+  - file: steps/step-06-aprovar-wireframe.md
+  - file: steps/step-07-mockup-animacao.md
+  - file: steps/step-08-aprovar-mockup.md
+  - file: steps/step-09-build.md
+  - file: steps/step-10-animacao.md
+  - file: steps/step-11-critica.md
+  - file: steps/step-12-aprovacao-final.md
+
+checkpoints:
+  - step-01-briefing
+  - step-03-aprovar-dna
+  - step-06-aprovar-wireframe
+  - step-08-aprovar-mockup
+  - step-12-aprovacao-final

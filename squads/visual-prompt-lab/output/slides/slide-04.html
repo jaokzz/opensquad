@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'Inter',sans-serif; background:#07070f; color:#f0f0ff; }
+  .wrap { padding:80px 64px 64px; height:100%; display:flex; flex-direction:column; }
+  .eyebrow { font-weight:800; font-size:34px; color:#c084fc; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; }
+  .headline { font-weight:900; font-size:58px; line-height:1.1; letter-spacing:-1px; margin-bottom:48px; }
+
+  .card { background:#0d0d1a; border:1px solid rgba(168,85,247,0.22); border-radius:28px; padding:40px 40px 32px; margin-bottom:24px; box-shadow:0 20px 60px rgba(0,0,0,0.5); }
+  .bubblerow { display:flex; margin-bottom:22px; }
+  .bubblerow.out { justify-content:flex-end; }
+  .bubble { max-width:78%; padding:22px 28px; border-radius:24px; font-size:32px; font-weight:600; line-height:1.35; }
+  .bubble.in { background:#181828; color:#f0f0ff; border-bottom-left-radius:6px; }
+  .bubble.out { background:#25B24A; color:#fff; border-bottom-right-radius:6px; }
+  .meta { display:flex; align-items:center; gap:12px; justify-content:flex-end; }
+  .autotag { font-size:24px; font-weight:700; color:#25B24A; background:rgba(37,178,74,0.15); padding:8px 18px; border-radius:100px; }
+  .time { font-size:24px; font-weight:600; color:#6b6b8a; }
+
+  .caption { font-size:36px; line-height:1.42; font-weight:500; margin-top:56px; color:#d6d6ea; }
+  .caption b { font-weight:800; color:#c084fc; }
+  .tag { display:inline-block; margin-top:34px; background:linear-gradient(135deg,#7c3aed,#a855f7); color:#fff; font-weight:700; font-size:26px; padding:14px 28px; border-radius:100px; align-self:flex-start; box-shadow:0 0 24px rgba(168,85,247,0.35); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">Ideia 3:</div>
+    <div class="headline">WhatsApp automático responde antes do cliente desistir</div>
+
+    <div class="card">
+      <div class="bubblerow in">
+        <div class="bubble in">Oi! Vocês atendem hoje?</div>
+      </div>
+      <div class="bubblerow out">
+        <div class="bubble out">Sim! Atendemos das 8h às 18h 😊 Como posso te ajudar?</div>
+      </div>
+      <div class="meta">
+        <div class="autotag">🤖 resposta automática</div>
+        <div class="time">agora</div>
+      </div>
+    </div>
+
+    <div class="caption">Cliente que não é respondido rápido, desiste e procura outro. Uma <b>automação simples de WhatsApp</b> já garante resposta na hora — mesmo sem você estar no celular.</div>
+    <div class="tag">Automação WhatsApp</div>
+  </div>
+</body>
+</html>

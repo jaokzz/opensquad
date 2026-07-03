@@ -37,6 +37,11 @@
 - Nunca: "seguro o suficiente" em segurança — binário: resiste ou não resiste
 - Nunca: recomendar WordPress para sites com animações complexas
 
+## Precificação (Fernando Finanças)
+
+- Margem-alvo: 10-35% sobre o custo real de entrega, não 40-60%+ estilo agência — João Vitor é freelancer solo (CLT + freelance) posicionado como "preço acessível sem overhead de agência", ainda construindo portfólio/case studies em Iporã do Oeste
+- Antes de calcular um orçamento novo, checar `output/prospeccao-<cliente>.md` — pode já existir proposta enviada ao cliente (ex.: Bem Estar, enviado 2026-07-01 em 3 planos R$3.000/3.200/3.400)
+
 ## Técnico (específico do squad)
 
 - Fase atual do João Vitor: zero seguidores → foco em awareness, completion rate e hook viral

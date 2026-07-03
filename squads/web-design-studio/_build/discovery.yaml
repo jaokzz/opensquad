@@ -1,0 +1,58 @@
+squad_code: "web-design-studio"
+purpose: "Squad especializado exclusivamente em criação de sites com design único, layouts editoriais/assimétricos e animações de nível Awwwards — do DNA visual ao deploy, para clientes locais e projetos próprios do João Vitor"
+domain: "mixed"  # design (visual/UX) + engenharia frontend, tratado como squad de produto dedicado
+
+company:
+  name: "Joao Vitor Tuni Kist — Freelancer de Sites e Automação"
+  tone: "Direto e próximo, linguagem acessível, transmite confiança e profissionalismo"
+  products: "Desenvolvimento de sites institucionais/landing pages e automação de WhatsApp para pequenas empresas locais"
+
+language: "Português (Brasil)"
+
+context:
+  audience: "Clientes finais do João Vitor: pequenas e médias empresas locais (clínicas, restaurantes/bares, comércio, prestadores de serviço)"
+  platforms: "Sites institucionais e landing pages (Next.js), sem escopo de conteúdo para redes sociais"
+  tone: "Premium, editorial, nunca genérico de IA — nível de acabamento das referências: Apple, Dolenga Wear, Gazu, Urban Fit, Nevermind"
+
+tools_needed:
+  - ui-ux-pro-max
+  - high-end-visual-design
+  - design-taste-frontend
+  - gsap-scrolltrigger
+  - animejs-animation
+  - css-native-animations
+  - threejs-animation
+  - 3d-web-experience
+  - nextjs-app-router-patterns
+  - nextjs-best-practices
+  - senior-frontend
+  - react-best-practices
+  - tailwind-design-system
+  - shadcn-ui
+  - fixing-motion-performance
+  - web-performance-optimization
+  - frontend-dev-guidelines
+  - web-design-guidelines
+  - second-opinion
+  - antipattern-detector
+  - image-fetcher
+  - image-ai-generator
+  - template-designer
+  - stitch-design
+  - tech-stack-recommender
+
+investigation:
+  enabled: false
+
+target_formats: []  # squad de produto/engenharia, não de conteúdo — Fase de formats não se aplica
+
+reference_material:
+  visual_references: "5 screenshots fornecidas pelo usuário (Apple AirPods Max, Dolenga Wear, Gazu, Urban Fit, Nevermind) — consolidadas em pipeline/data/visual-identity.md"
+
+decisions_confirmed_with_user:
+  - question: "Nome do squad"
+    answer: "Web Design Studio (web-design-studio)"
+  - question: "Profundidade de pipeline"
+    answer: "Completo — DNA Visual → Sistema de Design → Wireframe → Mockup+Animação → Build → Animação → Crítica → Aprovação Final"
+  - question: "Relação com studio-dev-marketing"
+    answer: "Squad 100% separado — André Animação e Felipe Figma continuam existindo no squad de marketing"

@@ -98,7 +98,7 @@ Marco comunica de forma concisa e estruturada. Quando recebe uma tarefa, apresen
 - **Reads from**: todos os agent files do squad, `pipeline/pipeline.yaml`, `_opensquad/_memory/company.md`, briefing do usuário
 - **Writes to**: `_memory/runs.md`, `output/orchestration-log-{date}.md`
 - **Triggers**: quando usuário quer executar qualquer tarefa multi-agente, ou quando pede ao squad sem especificar qual agente
-- **Coordinates**: André Animação, Sandro Segurança, Lucas Leads, Gabriela Gancho, Daniela Design, Caio Crítico, Pedro Prospecta, Valentina Vídeo, Nara Narrativa
+- **Coordinates**: André Animação, Sandro Segurança, Lucas Leads, Gabriela Gancho, Daniela Design, Caio Crítico, Pedro Prospecta, Valentina Vídeo, Nara Narrativa, Sofia SEO
 
 ## Mapa de Agentes
 
@@ -113,6 +113,7 @@ Marco comunica de forma concisa e estruturada. Quando recebe uma tarefa, apresen
 | 🎯 Pedro Prospecta | Scripts de prospecção, qualificação de leads | Quando João Vitor quer abordar lead local |
 | 🎬 Valentina Vídeo | Geração de vídeo IA via Higgsfield — scroll scrubbing, hero, loop de produto | Quando site precisa de asset de vídeo 4-8s |
 | 💌 Nara Narrativa | Vendas emocionais, carta premium física, diagnóstico de dores de negócio | Quando João Vitor quer prospectar com carta personalizada entregue presencialmente |
+| 🔍 Sofia SEO | SEO técnico, local e de conteúdo — auditoria, palavras-chave, Perfil da Empresa no Google | Antes de publicar qualquer site de cliente, ou ao planejar conteúdo com foco em busca orgânica |
 
 ## Fluxos Predefinidos
 
@@ -123,7 +124,17 @@ Lucas Leads → [checkpoint: aprovar ângulo] → Gabriela Gancho + Daniela Desi
 
 ### Fluxo: Construir Site de Cliente
 ```
-André Animação (briefing + build) → Sandro Segurança (auditoria) → [checkpoint: aprovar] → Deploy
+André Animação (briefing + build) → Sandro Segurança (auditoria) + Sofia SEO (auditoria) [paralelo] → [checkpoint: aprovar] → Deploy
+```
+
+### Fluxo: Otimização de SEO (site existente)
+```
+Sofia SEO (auditoria técnica + local) → [checkpoint: validar prioridades] → André Animação (implementa correções técnicas) → Sofia SEO (revalidação)
+```
+
+### Fluxo: Pesquisa de Palavras-Chave para Conteúdo
+```
+Sofia SEO (pesquisa de palavras-chave local) → [checkpoint: aprovar briefing] → Lucas Leads (ângulos) → Gabriela Gancho (roteiro/legenda)
 ```
 
 ### Fluxo: Prospectar Lead Local

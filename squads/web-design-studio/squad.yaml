@@ -1,0 +1,48 @@
+name: "Web Design Studio"
+code: "web-design-studio"
+description: "Squad dedicado à criação de sites com design único, layouts editoriais e animações de nível Awwwards — do DNA visual ao deploy"
+version: "1.0.0"
+
+skills:
+  - web_search
+  - web_fetch
+  - tech-stack-recommender
+  - antipattern-detector
+  - ui-ux-pro-max
+  - high-end-visual-design
+  - design-taste-frontend
+  - web-design-guidelines
+  - tailwind-design-system
+  - image-fetcher
+  - image-ai-generator
+  - template-designer
+  - stitch-design
+  - nextjs-app-router-patterns
+  - nextjs-best-practices
+  - senior-frontend
+  - react-best-practices
+  - shadcn-ui
+  - gsap-scrolltrigger
+  - animejs-animation
+  - css-native-animations
+  - threejs-animation
+  - 3d-web-experience
+  - fixing-motion-performance
+  - frontend-dev-guidelines
+  - web-performance-optimization
+  - second-opinion
+
+data:
+  - pipeline/data/visual-identity.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/animation-playbook.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/anti-patterns.md
+  - pipeline/data/output-examples.md
+
+memory:
+  - _memory/memories.md
+  - _memory/runs.md
+
+pipeline: pipeline/pipeline.yaml
+party: squad-party.csv

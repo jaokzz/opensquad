@@ -1,0 +1,5 @@
+id,name,title,icon,execution,path
+web-design-studio/agents/otavio-orquestra,Otávio Orquestra,Orquestrador de Squad,🧭,inline,./agents/otavio-orquestra.agent.md
+web-design-studio/agents/vitoria-visual,Vitória Visual,Diretora Criativa & UX/UI,🎨,inline,./agents/vitoria-visual.agent.md
+web-design-studio/agents/rafael-render,Rafael Render,Engenheiro Frontend & Motion,🖥️,inline,./agents/rafael-render.agent.md
+web-design-studio/agents/clara-critica,Clara Crítica,Revisora Awwwards-Level,⚡,inline,./agents/clara-critica.agent.md

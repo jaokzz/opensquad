@@ -1,0 +1,177 @@
+squad:
+  code: "web-design-studio"
+  name: "Web Design Studio"
+  description: "Squad dedicado à criação de sites com design único, layouts editoriais e animações de nível Awwwards — do DNA visual ao deploy"
+
+agents:
+  - id: "otavio-orquestra"
+    name: "Otávio Orquestra"
+    title: "Orquestrador de Squad"
+    icon: "🧭"
+    execution: "inline"
+    role_summary: "Coordena a sequência entre Vitória, Rafael e Clara, garante contexto completo em cada delegação e verifica exclusividade de cliente antes de aprovar qualquer DNA visual novo"
+    skills: [tech-stack-recommender, antipattern-detector]
+    tasks:
+      - name: "orquestrar-pipeline"
+        file: "tasks/orquestrar-pipeline.md"
+        description: "Conduz um projeto do zero até a aprovação final seguindo as 12 fases do pipeline padrão"
+      - name: "orquestrar-custom"
+        file: "tasks/orquestrar-custom.md"
+        description: "Atende pedidos fora do fluxo padrão (ajuste pontual, auditoria isolada) com o menor caminho necessário"
+
+  - id: "vitoria-visual"
+    name: "Vitória Visual"
+    title: "Diretora Criativa & UX/UI"
+    icon: "🎨"
+    execution: "inline"
+    role_summary: "Define DNA visual, sistema de design, wireframe, mockup high-fidelity e spec de animação — a primeira a agir em todo projeto novo"
+    skills: [ui-ux-pro-max, high-end-visual-design, design-taste-frontend, web-design-guidelines, tailwind-design-system, image-fetcher, image-ai-generator, template-designer, stitch-design]
+    tasks:
+      - name: "dna-visual"
+        file: "tasks/dna-visual.md"
+        description: "Define DNA visual em 3 palavras + referências reais + direção de paleta/tipografia"
+      - name: "sistema-design"
+        file: "tasks/sistema-design.md"
+        description: "Trava tokens de cor, tipografia, espaçamento, raio e sombra"
+      - name: "wireframe"
+        file: "tasks/wireframe.md"
+        description: "Estrutura low-fi de todas as seções, validando hierarquia e ordem"
+      - name: "mockup-animacao"
+        file: "tasks/mockup-animacao.md"
+        description: "Mockup high-fidelity desktop+mobile com spec de animação elemento a elemento"
+
+  - id: "rafael-render"
+    name: "Rafael Render"
+    title: "Engenheiro Frontend & Motion"
+    icon: "🖥️"
+    execution: "inline"
+    role_summary: "Implementa a estrutura Next.js/Tailwind fiel ao mockup e depois a animação (GSAP/Framer Motion/Three.js) conforme a spec, com obsessão por performance"
+    skills: [nextjs-app-router-patterns, nextjs-best-practices, senior-frontend, react-best-practices, tailwind-design-system, shadcn-ui, gsap-scrolltrigger, animejs-animation, css-native-animations, threejs-animation, 3d-web-experience, fixing-motion-performance, frontend-dev-guidelines, web-performance-optimization]
+    tasks:
+      - name: "build"
+        file: "tasks/build.md"
+        description: "Implementa a estrutura estática fiel ao mockup e ao design system"
+      - name: "animacao"
+        file: "tasks/animacao.md"
+        description: "Implementa a spec de animação exata usando a ferramenta certa por padrão"
+
+  - id: "clara-critica"
+    name: "Clara Crítica"
+    title: "Revisora Awwwards-Level"
+    icon: "⚡"
+    execution: "inline"
+    role_summary: "Audita o site rodando contra quality-criteria.md e anti-patterns.md, emitindo veredito com score por bloco e Path to Approval"
+    skills: [second-opinion, antipattern-detector, web-design-guidelines, fixing-motion-performance, web-performance-optimization]
+    tasks:
+      - name: "critica"
+        file: "tasks/critica.md"
+        description: "Revisão Awwwards-level com score por bloco e veredito final"
+
+pipeline:
+  - step: 1
+    name: "briefing"
+    type: "checkpoint"
+    output_file: "squads/web-design-studio/output/content-brief.md"
+  - step: 2
+    name: "dna-visual"
+    type: "agent"
+    agent: "vitoria-visual"
+    execution: "inline"
+    input_file: "squads/web-design-studio/output/content-brief.md"
+    output_file: "squads/web-design-studio/output/dna-visual.md"
+  - step: 3
+    name: "aprovar-dna"
+    type: "checkpoint"
+  - step: 4
+    name: "sistema-design"
+    type: "agent"
+    agent: "vitoria-visual"
+    execution: "inline"
+    input_file: "squads/web-design-studio/output/dna-visual.md"
+    output_file: "squads/web-design-studio/output/design-system.md"
+  - step: 5
+    name: "wireframe"
+    type: "agent"
+    agent: "vitoria-visual"
+    execution: "inline"
+    input_file: "squads/web-design-studio/output/design-system.md"
+    output_file: "squads/web-design-studio/output/wireframes.md"
+  - step: 6
+    name: "aprovar-wireframe"
+    type: "checkpoint"
+  - step: 7
+    name: "mockup-animacao"
+    type: "agent"
+    agent: "vitoria-visual"
+    execution: "inline"
+    input_file: "squads/web-design-studio/output/wireframes.md"
+    output_file: "squads/web-design-studio/output/mockup-handoff.md"
+  - step: 8
+    name: "aprovar-mockup"
+    type: "checkpoint"
+  - step: 9
+    name: "build"
+    type: "agent"
+    agent: "rafael-render"
+    execution: "inline"
+    input_file: "squads/web-design-studio/output/mockup-handoff.md"
+    output_file: "squads/web-design-studio/output/build-notes.md"
+  - step: 10
+    name: "animacao"
+    type: "agent"
+    agent: "rafael-render"
+    execution: "inline"
+    input_file: "squads/web-design-studio/output/build-notes.md"
+    output_file: "squads/web-design-studio/output/animation-notes.md"
+  - step: 11
+    name: "critica"
+    type: "agent"
+    agent: "clara-critica"
+    execution: "inline"
+    input_file: "squads/web-design-studio/output/animation-notes.md"
+    output_file: "squads/web-design-studio/output/review.md"
+    on_reject: 9
+  - step: 12
+    name: "aprovacao-final"
+    type: "checkpoint"
+
+research_brief: |
+  Grounded em conhecimento já embutido nas skills instaladas do squad (design-taste-frontend e
+  high-end-visual-design — diretrizes anti-genérico de IA, double-bezel, magnetic buttons, variance
+  engine) combinado com as 5 referências visuais fornecidas pelo João Vitor (Apple AirPods Max,
+  Dolenga Wear, Gazu, Urban Fit, Nevermind). Padrões consolidados em pipeline/data/visual-identity.md
+  e pipeline/data/animation-playbook.md.
+
+skills_installed:
+  - web_search
+  - web_fetch
+  - tech-stack-recommender
+  - antipattern-detector
+  - ui-ux-pro-max
+  - high-end-visual-design
+  - design-taste-frontend
+  - web-design-guidelines
+  - tailwind-design-system
+  - image-fetcher
+  - image-ai-generator
+  - template-designer
+  - stitch-design
+  - nextjs-app-router-patterns
+  - nextjs-best-practices
+  - senior-frontend
+  - react-best-practices
+  - shadcn-ui
+  - gsap-scrolltrigger
+  - animejs-animation
+  - css-native-animations
+  - threejs-animation
+  - 3d-web-experience
+  - fixing-motion-performance
+  - frontend-dev-guidelines
+  - web-performance-optimization
+  - second-opinion
+
+formats_selected: []
+
+best_practices_consulted: []  # catálogo _opensquad/core/best-practices é focado em conteúdo/marketing;
+                               # este squad usa as skills de frontend/design instaladas como base de conhecimento

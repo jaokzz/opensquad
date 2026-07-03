@@ -1,5 +1,5 @@
 # Leads — Iporã do Oeste
-_Pesquisa realizada em 2026-05-29 | Última atualização: 2026-06-22_
+_Pesquisa realizada em 2026-05-29 | Última atualização: 2026-07-01_
 
 ---
 
@@ -14,7 +14,9 @@ _Pesquisa realizada em 2026-05-29 | Última atualização: 2026-06-22_
 | Hotel e Pousada Iporã | 📤 Abordado | 2026-06-22 | Mensagem enviada. Argumento financeiro direto: 15-20% de comissão pro Booking por reserva. Público mais velho — linguagem simples. |
 | Salão Betiane | ⛔ Descartado | 2026-06-22 | Menor do que esperado. 95 seguidores Instagram, 13 avaliações Google. Não compensa o esforço agora. |
 | Armazém Bar e Burguer | ✅ Fechado | 2026-06-23 | Carol confirmou interesse. Site novo a ser desenvolvido do zero. Endereço: Av. Gustavo Fetter, 433, Centro. |
-| Bem Estar Clínica Estética | ✅ Fechado | 2026-06-23 | Resposta positiva confirmada. Site a ser desenvolvido. |
+| Armazém Bar e Burguer | 🟡 Orçamento enviado | 2026-07-01 | Site v2 pronto e enviado para análise (armazem-bar-burguer.vercel.app). 3 planos apresentados: Essencial R$1.850 / Completo R$2.050 (recomendado) / Premium R$2.250 + manutenção mensal R$120. Detalhes em `squads/studio-dev-marketing/output/prospeccao-armazem.md`. |
+| Bem Estar Clínica Estética | 🟢 Protótipo enviado | 2026-07-01 | Prazo prometido era sexta-feira 2026-06-26. Protótipo enviado com ~5 dias de atraso (quarta-feira 2026-07-01) para análise do cliente. |
+| Bem Estar Clínica Estética | 🟡 Orçamento enviado | 2026-07-01 | Site institucional completo finalizado e enviado para análise (bemstar.vercel.app). 3 planos apresentados: Essencial R$3.000 / Completo R$3.200 (recomendado) / Premium R$3.400 + manutenção mensal R$180. Detalhes em `squads/studio-dev-marketing/output/prospeccao-bem-estar.md`. |
 
 ---
 
