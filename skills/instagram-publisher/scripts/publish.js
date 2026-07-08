@@ -42,8 +42,11 @@ export async function uploadToImgBB(imagePath, apiKey) {
 }
 
 // ── Instagram Graph API ───────────────────────────────────────
-
-const IG_BASE = 'https://graph.facebook.com/v21.0';
+// Host configurável: contas conectadas via "Instagram API with Instagram Login"
+// (token com prefixo IGAA) usam graph.instagram.com. Contas conectadas via
+// Facebook Login for Business (token EAA + Página do Facebook) usam
+// graph.facebook.com. Ver INSTAGRAM_API_HOST no .env.
+const IG_BASE = `https://${process.env.INSTAGRAM_API_HOST || 'graph.facebook.com'}/v21.0`;
 
 export async function createChildContainer(userId, imageUrl, accessToken) {
   const params = new URLSearchParams({
@@ -116,6 +119,7 @@ async function main() {
   }
 
   const { INSTAGRAM_ACCESS_TOKEN, INSTAGRAM_USER_ID, IMGBB_API_KEY } = process.env;
+  console.log(`   Using API host: ${IG_BASE}`);
   if (!INSTAGRAM_ACCESS_TOKEN) throw new Error('INSTAGRAM_ACCESS_TOKEN is not set in environment');
   if (!INSTAGRAM_USER_ID) throw new Error('INSTAGRAM_USER_ID is not set in environment');
   if (!IMGBB_API_KEY) throw new Error('IMGBB_API_KEY is not set in environment. Get one at https://api.imgbb.com/');
