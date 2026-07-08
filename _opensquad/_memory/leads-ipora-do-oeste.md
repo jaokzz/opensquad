@@ -1,5 +1,5 @@
 # Leads — Iporã do Oeste
-_Pesquisa realizada em 2026-05-29 | Última atualização: 2026-07-01_
+_Pesquisa realizada em 2026-05-29 | Última atualização: 2026-07-08_
 
 ---
 
@@ -7,16 +7,12 @@ _Pesquisa realizada em 2026-05-29 | Última atualização: 2026-07-01_
 
 | Negócio | Status | Data | Observação |
 |---------|--------|------|------------|
+| Armazém Bar e Burguer | ✅ Fechado — R$597 | 2026-07-08 | Fechado no plano de parceria/portfólio (site no ar, sem manutenção). Sem custo adicional pro João — o valor inteiro foi lucro. Detalhes em `clientes/prospeccao/prospeccao-armazem.md`. |
+| Bem Estar Clínica Estética | 🔵 Pausado | 2026-07-08 | Gostou bastante do protótipo e do orçamento, mas no momento está investindo pesado em tráfego pago/marketing. Sem recusa — provável retomada no futuro. Detalhes em `clientes/prospeccao/prospeccao-bem-estar.md`. |
+| Academia da Adri | 🟡 Em análise | 2026-07-08 | Orçamento de R$1.950 (promoção -R$390) apresentado. Vai conversar com o marido (Mário) antes de decidir. Detalhes em `clientes/prospeccao/prospeccao-academia-adri.md`. |
+| Hotel e Pousada Iporã | ⛔ Sem resposta — encerrado | 2026-07-08 | Mensagem enviada em 22/06, nunca respondeu. Lead encerrada por ora. |
 | Pietra Giehl (MP Team) | 🟡 Em negociação | 2026-06 | Gostou do site, mas acha que não faz sentido sem preços. Argumento enviado: site é credencial, não catálogo. Aguardando resposta. |
-| IFISIO Fisioterapia | 🔵 Futuro | 2026-06 | Não fechou. Objeção: público é mais idoso, site não auxiliaria. Aberta para futuro. Follow-up em ~3 meses. |
-| Academia da Adri | 📤 Abordado | 2026-06-22 | Mensagem enviada. Argumento: 174 avaliações 5.0 escondidas no Google, Linktree genérico, turistas que pesquisam academia. |
-| Bem Estar Clínica Estética | 📤 Abordado | 2026-06-22 | Mensagem enviada. Argumento: procedimentos de alto ticket são pesquisados antes, clínicas de Chapecó aparecem primeiro. |
-| Hotel e Pousada Iporã | 📤 Abordado | 2026-06-22 | Mensagem enviada. Argumento financeiro direto: 15-20% de comissão pro Booking por reserva. Público mais velho — linguagem simples. |
-| Salão Betiane | ⛔ Descartado | 2026-06-22 | Menor do que esperado. 95 seguidores Instagram, 13 avaliações Google. Não compensa o esforço agora. |
-| Armazém Bar e Burguer | ✅ Fechado | 2026-06-23 | Carol confirmou interesse. Site novo a ser desenvolvido do zero. Endereço: Av. Gustavo Fetter, 433, Centro. |
-| Armazém Bar e Burguer | 🟡 Orçamento enviado | 2026-07-01 | Site v2 pronto e enviado para análise (armazem-bar-burguer.vercel.app). 3 planos apresentados: Essencial R$1.850 / Completo R$2.050 (recomendado) / Premium R$2.250 + manutenção mensal R$120. Detalhes em `squads/studio-dev-marketing/output/prospeccao-armazem.md`. |
-| Bem Estar Clínica Estética | 🟢 Protótipo enviado | 2026-07-01 | Prazo prometido era sexta-feira 2026-06-26. Protótipo enviado com ~5 dias de atraso (quarta-feira 2026-07-01) para análise do cliente. |
-| Bem Estar Clínica Estética | 🟡 Orçamento enviado | 2026-07-01 | Site institucional completo finalizado e enviado para análise (bemstar.vercel.app). 3 planos apresentados: Essencial R$3.000 / Completo R$3.200 (recomendado) / Premium R$3.400 + manutenção mensal R$180. Detalhes em `squads/studio-dev-marketing/output/prospeccao-bem-estar.md`. |
+| IFISIO Fisioterapia | 🔵 Futuro | 2026-06 | Não fechou. Objeção: público é mais idoso, site não auxiliaria. Follow-up em ~3 meses (set/2026). |
 
 ---
 
@@ -26,18 +22,12 @@ _Pesquisa realizada em 2026-05-29 | Última atualização: 2026-07-01_
 |---------|----------|----------------|---------------------|
 | Manu Fisioterapia e Pilates | Fisioterapia / Pilates | Só Facebook | Profissional liberal com múltiplas especialidades — site eleva credibilidade e permite agendamentos |
 | Simon Fisioterapia e Pilates | Fisioterapia / Pilates | Facebook + Instagram | Clínica com Pilates, forte demanda por agendamento online |
-| IFISIO Fisioterapia | Fisioterapia | Instagram (1.809 seguidores) | 🔵 Não fechou — follow-up em set/2026 |
-| Academia da Adri | Academia / Fitness | Facebook + Instagram (7K seguidores pessoal) | 📤 Abordado 22/06 — Adriane Lorenzato Borsato. 4.9⭐ 174 avaliações. WhatsApp: (49) 99117-3572 |
-| Salão de Beleza da Betiane | Beleza / Cabelereiro | Facebook (275 seg) Instagram (95 seg) | ⛔ Descartado — muito pequeno |
-| Bem Estar Clínica de Estética Avançada | Estética avançada | Instagram (3.237 seg) | 📤 Abordado 22/06 — @bemestarclinicaestetica. WhatsApp: (49) 99100-2161. Francieli Wolf também atende lá. |
 | Clínica de Estética e Massoterapia Luar | Estética / Massoterapia | Não identificada | Segunda maior do segmento; sem presença confirmada |
-| Hotel e Pousada Iporã | Hospedagem | Facebook (986 seg) Instagram (378 seg) | 📤 Abordado 22/06 — 4.9⭐ 97 avaliações. WhatsApp: (49) 99201-3069. Público mais velho. |
 | Hotel Chalé (Posada Chalé) | Pousada | Facebook | Apenas página no Facebook, sem captação de reservas própria |
 | Pet Shop Armazém do Bicho | Pet Shop | Diretório | Sem site — agendamento de banho/tosa seria atrativo |
 | Restaurante Althernativo | Restaurante / Pizzaria / Bar | Facebook | Cardápio e reservas online teriam impacto direto |
 | Restaurante Telhadinho | Restaurante | Diretórios externos | Sem presença própria |
 | Restaurante Sabor Gaúcho | Restaurante | Diretórios | Sem site próprio |
-| Armazém Bar e Burger | Hamburgueria / Bar | Instagram (@armazemburgers) | 📤 Abordado 22/06 — Carol (@carol_639), dona. João conhece pessoalmente. WhatsApp: (49) 9181-5140 |
 | Paiol Restaurante e Pizzaria | Restaurante / Pizzaria | Facebook | Só diretórios de CNPJ e Solutudo |
 | Mecânica Bienert | Oficina Mecânica | Rede Oficinas | +35 anos de experiência; fraca presença online |
 | Mecânica Lorenzet | Oficina Mecânica | CNPJ/diretórios | Uma das maiores mecânicas; zero presença digital ativa |

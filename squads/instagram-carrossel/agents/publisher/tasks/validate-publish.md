@@ -123,4 +123,4 @@ Salvar em `output/publish-report.md`:
 | Caption acima de 2.200 chars | Truncar apenas com aprovação do usuário |
 | Erro 400 da API (formato inválido) | Verificar specs do manifest, sugerir reconversão |
 | Erro 401 (autenticação) | Alertar sobre token expirado — não tentar novamente sem novo token |
-| Erro de aspect ratio | Verificar se 1080×1440 foi aceito; sugerir reconversão para 1080×1350px |
+| Erro de aspect ratio | O padrão do squad já é 1080×1350px (4:5); verificar se algum slide saiu com dimensão diferente e pedir reexportação ao Davi Design |

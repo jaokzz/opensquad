@@ -102,11 +102,11 @@ Cada agente deve consultar este arquivo antes de entregar seu output.
 
 ### 10. Dependências externas no HTML além de Google Fonts
 ❌ Bootstrap, Tailwind, ou qualquer CDN de CSS
-❌ Imagens externas sem caminho absoluto verificado
+❌ Imagens externas sem caminho absoluto verificado (a foto de capa gerada via Higgsfield deve estar salva localmente em `output/slides/assets/`, nunca referenciada por URL remota)
 ❌ JavaScript de qualquer tipo
 ❌ Fontes locais referenciadas por caminho relativo
 
-**Por quê é prejudicial:** O rendering via Playwright não tem acesso a dependências externas não carregadas no momento da captura. Qualquer dependência não resolvida quebra o slide silenciosamente sem erro visível.
+**Por quê é prejudicial:** O render via Chrome headless (`file://`) não tem acesso a dependências externas não carregadas no momento da captura. Qualquer dependência não resolvida (rede indisponível, path relativo quebrado) quebra o slide silenciosamente sem erro visível.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 task: "Find and Rank News"
-order: 1
+order: 2
 input:
   - research_focus: Tema e período de pesquisa do usuário (lido de output/research-focus.md)
   - company_context: Perfil da empresa em _opensquad/_memory/company.md

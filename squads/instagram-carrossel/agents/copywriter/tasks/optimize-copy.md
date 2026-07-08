@@ -34,7 +34,7 @@ Revisa e otimiza o copy rascunho aplicando a checklist de qualidade e eliminando
 
 5. **Otimizar transições entre slides.** Cada slide deve terminar com um micro-gancho que faz o leitor querer ver o próximo. Não precisa ser explícito ("veja no próximo slide") — pode ser uma pergunta aberta, um dado incompleto deliberadamente, ou uma implicação ainda não respondida.
 
-6. **Revisar a legenda.** A abertura (primeiros 125 chars) deve ser forte o suficiente para que o leitor clique "ver mais". O corpo deve ser complementar ao carrossel, não repetitivo. Hashtags verificados: 5-8, todos relevantes para o nicho.
+6. **Revisar a legenda.** A abertura (primeiros 125 chars) deve ser forte o suficiente para que o leitor clique "ver mais". O corpo deve ser complementar ao carrossel, não repetitivo, e precisa transmitir confiança e conhecimento real na área, nunca soar genérico ou burocrático. Hashtags verificados: 5-8, todos relevantes para o nicho.
 
 7. **Salvar versão otimizada e log.** Atualizar o carousel-draft.md com as melhorias aplicadas. Incluir um `optimization_log` ao final do documento com as mudanças feitas.
 

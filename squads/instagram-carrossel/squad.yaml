@@ -26,7 +26,7 @@ performance_mode: "alta-performance"
 skills:
   - web_search
   - web_fetch
-  - image-creator
+  - image-fetcher
   - instagram-publisher
 
 data:

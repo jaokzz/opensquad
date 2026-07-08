@@ -52,14 +52,13 @@ Freelancer que desenvolve sites e automações para WhatsApp, atuando no tempo l
 
 | Projeto | Cliente | Stack | Status | Path |
 |---------|---------|-------|--------|------|
-| Armazém Bar e Burguer v1 | Armazém Burgers (Iporã do Oeste) | HTML + GSAP ScrollTrigger | Entregue | `squads/studio-dev-marketing/output/armazem-site/` |
-| Armazém Bar e Burguer v2 | Armazém Burgers (Iporã do Oeste) | Next.js 15 + Tailwind | Em produção | `squads/studio-dev-marketing/output/armazem-site-v2/` |
-| MP Team Site | Pietra Giehl | Next.js | Proposta enviada | `squads/studio-dev-marketing/output/2026-05-28-205647/mp-team-site/` |
+| Armazém Bar e Burguer | Armazém Burgers (Iporã do Oeste) | Next.js 15 + Tailwind | Em produção | `clientes/sites-ipora/armazem-site/` |
+| MP Team Site | Pietra Giehl | Next.js | Proposta enviada | `clientes/sites-ipora/mp-team-pietra/` |
 
 ## Contexto Estratégico
 
 Joao Vitor está na fase inicial de escalar seu freelance. O foco atual é:
-1. Criar e crescer perfil no Instagram com conteúdo de valor
+1. Criar e crescer perfil no Instagram com conteúdo de valor — **métrica nº 1 no momento: novos seguidores** (definido em 2026-07-08); todo post é desenhado pra viralizar e converter alcance em follows, com DMs/contatos como objetivo secundário
 2. Gerar provas sociais (cases, depoimentos)
 3. Converter seguidores e contatos locais em clientes pagantes
 4. Produzir carrosséis de autoridade (sites/automação para negócio local) via `squads/instagram-carrossel` — squad adaptado em 2026-07-01 para esse fim

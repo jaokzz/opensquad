@@ -65,6 +65,14 @@ Cada critério é avaliado em escala 1-10.
 - 3-4: Tom errado. Muito formal, muito técnico/jargão, ou copy vazia sem substância.
 - 1-2: Tom completamente fora do padrão da marca.
 
+### C7: Follow Trigger (objetivo nº 1: seguidores — definido pelo usuário em 2026-07-08)
+**Pergunta:** O post dá um motivo concreto pra um desconhecido SEGUIR o perfil (não só salvar/comentar)?
+- 9-10: Conteúdo com valor evidente e recorrente + follow CTA específico no CTA e na legenda ("me segue: toda semana sai um conteúdo assim pra X"). Quem chegou pelo explore tem razão clara pra seguir.
+- 7-8: Follow CTA presente e específico, mas o valor recorrente do perfil poderia estar mais explícito.
+- 5-6: Follow CTA presente mas genérico, ou só na legenda.
+- 3-4: Nenhum follow CTA; o post otimiza só pra save/comentário.
+- 1-2: O post não dá razão nenhuma pra visitar o perfil.
+
 ---
 
 ## Visual Quality Criteria

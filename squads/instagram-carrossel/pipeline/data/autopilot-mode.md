@@ -17,11 +17,7 @@ Se por algum motivo as credenciais do Instagram estiverem configuradas e dispon�
 ## Como resolver cada checkpoint sem humano
 
 ### Step-01 — Tema do dia
-1. Ler `pipeline/data/content-pillars.md` para a lista de pilares de conteúdo.
-2. Ler `_memory/memories.md` (seção "Executions Log") para ver os últimos temas/pilares/ângulos usados.
-3. Escolher o próximo pilar da lista que **não** apareceu nos últimos 5 posts (rotação simples). Se todos já apareceram recentemente, escolher o que tem mais tempo desde o último uso.
-4. Período de pesquisa padrão: "últimos 7 dias" (notícias/dados) — se o pilar não depender de notícia recente (ex: tutorial evergreen), pode pesquisar sem filtro de data.
-5. Salvar em `output/research-focus.md` normalmente e seguir para step-02.
+Não preencher `output/research-focus.md` manualmente aqui. Simplesmente avançar para o Step-02 sem tema definido — a task `select-content-topic` da Ângela Ângulo (que agora roda automaticamente quando não há tema) já cobre toda a lógica de rotação de pilares, checagem de cases novos em `company.md` e escolha de período. Ver `agents/researcher/tasks/select-content-topic.md`.
 
 ### Step-03 — Seleção de notícia/dado
 Escolher a história com maior `viral_potential_score` que:
@@ -42,7 +38,7 @@ Rodar a rubrica de `pipeline/data/quality-criteria.md` (C1-C6) internamente ante
 - Se reprovar de novo → **parar o pipeline aqui**, registrar o motivo em `_memory/memories.md` sob "Recurring Issues", e não gerar visual. Este dia fica sem post — melhor não publicar do que publicar abaixo do padrão.
 
 ### Step-09 — Identidade visual
-Não regenerar a identidade visual a cada execução. Reutilizar o sistema de design já documentado em execuções anteriores (`output/runs/*/design-system.md` mais recente), ajustando só a cor de acento se a rotação de série pedir. Se esta for a primeira execução (nenhum design system anterior), usar as recomendações de `pipeline/data/research-brief.md` (Domain 2).
+Não regenerar a identidade visual a cada execução. Reutilizar o `base.css` já documentado em execuções anteriores (`output/runs/*/slides/base.css` mais recente), ajustando só a cor de acento se a rotação de série pedir. Se esta for a primeira execução (nenhum base.css anterior) e não houver identidade real para extrair, usar as recomendações de `pipeline/data/research-brief.md` (Domain 2).
 
 ### Step-11 — Aprovação das imagens
 Mesma lógica do step-07: rodar critérios V1-V3 de `quality-criteria.md`. Aprovar se dentro da rubrica; senão corrigir uma vez; senão parar e registrar o problema, sem publicar.
@@ -52,7 +48,7 @@ Rodar o reviewer normalmente. Se REJECT, não avançar para step-13 de forma alg
 
 ### Step-13 — Publicação
 **Nunca executar.** Ao invés disso:
-1. Salvar todos os artefatos do dia em `output/runs/YYYY-MM-DD/` (copiar carousel-draft.md, design-system.md, slides/, slides/rendered/, review-final.md)
+1. Salvar todos os artefatos do dia em `output/runs/YYYY-MM-DD/` (copiar carousel-draft.md, slides/ incluindo base.css e assets/, slides/rendered/, review-final.md)
 2. Adicionar uma linha em `_memory/memories.md` sob "Executions Log": data, pilar, ângulo, status (aprovado/rejeitado), caminho do output
 3. Commitar e dar push desse output pro repositório (`git add`, `git commit -m "carrossel gerado automaticamente — YYYY-MM-DD — [tema]"`, `git push`)
 4. Se a ferramenta de notificação estiver disponível, enviar uma notificação curta ao usuário dizendo que o carrossel do dia está pronto em `output/runs/YYYY-MM-DD/` aguardando aprovação para publicar

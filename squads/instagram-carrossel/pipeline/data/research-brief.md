@@ -56,15 +56,20 @@
 4. **Ratio WCAG AA (4.5:1) é mínimo obrigatório.** Texto branco em fundo escuro ou texto escuro em fundo claro. Nunca texto sobre imagem sem overlay de proteção.
    - Confidence: HIGH | Source: Image Designer agent spec
 
-5. **Carrosséis verticais (1080×1440px ou 1080×1350px) ocupam mais tela e geram mais engajamento.** Instagram atualizou para privilegiar 4:5 ratio em feeds. Proporção 3:4 (1080×1440) também funciona bem.
+5. **Carrosséis verticais (1080×1350px, ratio 4:5) ocupam mais tela e geram mais engajamento.** Instagram privilegia 4:5 ratio em feeds — é a proporção máxima suportada oficialmente. 3:4 (1080×1440) não é suportado pela API e não deve ser usado.
    - Confidence: HIGH | Sources: Hootsuite, Social Media Today, 2025
 
 ### Design System Recommendations for Joao Vitor (Sites & Automação) — adaptado
+
+**Atualizado 2026-07-07:** para carrosséis da marca própria do João (@jaokdev, sem cliente associado), o padrão canônico agora é `pessoal/carrosseis/DESIGN-SYSTEM.md` — Barlow Condensed + preto/branco alternado + acento laranja-avermelhado, inspirado no estilo @brandsdecoded a pedido do usuário. Ler esse arquivo antes de aplicar as recomendações genéricas abaixo.
+
+As recomendações genéricas abaixo continuam valendo só como fallback caso `DESIGN-SYSTEM.md` não esteja disponível, ou para identidade real de cliente extraída (ver `image-designer.custom.md` — extrair sempre que houver marca/projeto real associado ao conteúdo, isso tem prioridade sobre os dois casos acima):
 - **Primary color:** Dark navy ou grafite (fundo sério e confiável, sem parecer "corporativo frio")
 - **Accent:** Cor vibrante única por série (verde WhatsApp, azul elétrico ou laranja) — energia visual sem perder credibilidade B2B
 - **Text:** Branco puro (#FFFFFF) em fundos escuros — contraste máximo
 - **Highlight:** Verde ou amarelo para números e dados importantes (reforça a ideia de resultado/dinheiro)
-- **Font:** Inter ou Poppins — profissional, legível, confiável para público não técnico
+- **Display font:** fonte condensada real (ex: Anton, Barlow Condensed) para títulos grandes — nunca fonte variável (ex: Archivo), que não condensa corretamente no render headless
+- **Body font:** Inter ou Poppins — profissional, legível, confiável para público não técnico
 
 ---
 
@@ -106,7 +111,7 @@
 2. **Formato obrigatório: JPG ou PNG.** JPEG é o mais compatível. PNG é aceito mas recomenda-se converter para JPEG para melhor compatibilidade.
    - Confidence: HIGH | Source: Meta for Developers, Sprout Social, 2025
 
-3. **Todas as imagens do carrossel devem ter o mesmo aspect ratio.** A API default para 1:1 se não especificado. Para feed vertical (4:5): 1080×1350px. Para o formato 3:4 usado no squad: 1080×1440px precisa ser validado.
+3. **Todas as imagens do carrossel devem ter o mesmo aspect ratio.** A API default para 1:1 se não especificado. O squad usa 1080×1350px (4:5) — o formato vertical oficialmente suportado.
    - Confidence: HIGH | Source: Meta for Developers, AdManage, 2025
 
 4. **As imagens devem estar em servidor público acessível.** O Instagram faz curl das URLs durante criação dos media containers. Ferramentas como imgbb são usadas para hosting temporário antes do publish.
@@ -133,5 +138,4 @@
 
 ## Gaps Identified
 - Não encontramos dados específicos sobre CTR médio de carrosséis para nicho de serviços B2B locais (sites/automação) no Brasil
-- O formato exato 1080×1440 (3:4) precisa ser validado contra a API — o formato oficial suportado é 4:5 (1080×1350). Pode ser necessário ajustar para 1080×1350px
 - Não há dados sobre melhor horário de publicação específico para o público de donos de pequenos negócios no Brasil (recomendação geral: terça a sexta, 7-9h ou 18-20h horário de Brasília — mesmo horário em que o próprio dono de negócio checa o celular fora do expediente)

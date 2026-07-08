@@ -1,6 +1,0 @@
-id,name,title,icon,execution,path
-visual-prompt-lab/agents/orion-orquestra,Orion Orquestra,Orquestrador Criativo,🎭,inline,./agents/orion-orquestra.agent.md
-visual-prompt-lab/agents/iara-ideias,Iara Ideias,Geradora de Conceitos Visuais,💡,inline,./agents/iara-ideias.agent.md
-visual-prompt-lab/agents/priya-prompt,Priya Prompt,Engenheira de Prompts de Imagem,✍️,inline,./agents/priya-prompt.agent.md
-visual-prompt-lab/agents/hugo-higgsfield,Hugo Higgsfield,Criador de Imagens IA,🖼️,inline,./agents/hugo-higgsfield.agent.md
-visual-prompt-lab/agents/vera-visual,Vera Visual,Curadora de Qualidade Visual,🔍,inline,./agents/vera-visual.agent.md

@@ -21,6 +21,7 @@ steps:
     type: agent
     agent: researcher
     tasks:
+      - select-content-topic  # condicional: só roda se o usuário não deu um tema no Step 01
       - find-and-rank-news
     file: steps/step-02-find-news.md
     depends_on: step-01
@@ -129,7 +130,8 @@ output:
     - output/selected-angle.yaml
     - output/carousel-draft.md
     - output/selected-visual.yaml
-    - output/design-system.md
+    - output/slides/base.css
+    - output/slides/assets/
     - output/slides/
     - output/slides/rendered/
     - output/review-final.md

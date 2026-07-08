@@ -41,7 +41,7 @@ Antes de avançar para o Step 07, verificar:
 - [ ] carousel-draft.md existe e tem todos os slides numerados
 - [ ] Slide 1 tem dado específico com fonte identificável
 - [ ] Existe slide de Reflexão identificado
-- [ ] Caption está presente com hashtags
+- [ ] Caption está presente com hashtags, e transmite confiança e conhecimento real na área (não é genérica nem repete o slide 1 palavra por palavra)
 - [ ] Optimization log documenta as revisões feitas
 
 Se qualquer verificação falhar, solicitar que Carlos Carrossel revise o item específico antes de prosseguir.

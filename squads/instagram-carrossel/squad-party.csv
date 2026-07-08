@@ -1,6 +1,6 @@
 id,name,icon,role,path,execution,skills
-researcher,Ângela Ângulo,🔍,Extrai insights e identifica ângulos do texto/notícia fornecido pelo usuário,./agents/researcher.custom.md,subagent,"web_search,web_fetch"
+researcher,Ângela Ângulo,🔍,Decide o tema/pilar do carrossel quando o usuário não dá um, e pesquisa/ranqueia notícias e dados dentro do tema,./agents/researcher.custom.md,subagent,"web_search,web_fetch"
 copywriter,Carlos Carrossel,✍️,Cria o copy completo de cada slide com dados reais e reflexões profundas,./agents/copywriter.custom.md,inline,web_search
-image-designer,Davi Design,🎨,Cria os slides visuais bold e coloridos em HTML/CSS e renderiza via Playwright,./agents/image-designer.custom.md,inline,"image-creator,image-fetcher"
+image-designer,Davi Design,🎨,Extrai identidade real ou propõe identidade visual bold; monta slides em HTML/CSS com capa via Higgsfield e renderiza via Chrome headless,./agents/image-designer.custom.md,inline,image-fetcher
 reviewer,Vera Veredito,✅,Avalia qualidade do copy e visual com foco no scroll-stop test (peso 1.5x),./agents/reviewer.custom.md,inline,
 publisher,Paula Post,📤,Publica o carrossel aprovado no Instagram via Graph API,./agents/publisher.custom.md,inline,instagram-publisher

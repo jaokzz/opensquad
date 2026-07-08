@@ -36,9 +36,9 @@ Cria o copy completo de cada slide do carrossel com base no ângulo selecionado,
 
 5. **Penúltimo slide de conteúdo = Reflexão.** Obrigatório. A reflexão não é um dado novo — é a síntese emocional do que foi apresentado. Uma pergunta, afirmação ou perspectiva que o leitor não tinha antes de ler o carrossel.
 
-6. **Último slide = CTA específico.** O CTA menciona especificamente o conteúdo do carrossel. Inclui 2 ações: uma de save ("salva esse carrossel porque...") e uma de engajamento ("comenta...").
+6. **Último slide = CTA específico, com follow em primeiro lugar.** O CTA menciona especificamente o conteúdo do carrossel. Hierarquia de ações (objetivo nº 1 do usuário desde 2026-07-08 é ganhar seguidores): (1) **seguir** — sempre amarrado a valor recorrente ("me segue: toda semana sai um conteúdo assim pra X"), nunca "segue pra mais conteúdo" seco; (2) save ("salva esse carrossel porque..."); (3) engajamento ("comenta..."). O follow pode estar no slide, na legenda ou nos dois, mas nunca fica de fora.
 
-7. **Escrever a legenda.** A legenda é uma versão ampliada e conectada do hook do slide 1. Inclui: abertura (primeiros 125 chars = mais visíveis antes do "ver mais"), corpo, e hashtags ao final. Máximo: 2.000 chars (manter margem de segurança).
+7. **Escrever a legenda. Nunca opcional, sempre entregue junto com os slides.** A legenda é uma versão ampliada e conectada do hook do slide 1, não uma repetição mecânica dele. Precisa **transmitir confiança e conhecimento real na área** (sites e automação de WhatsApp): o leitor precisa sair da legenda achando que o autor entende do assunto, não que só "postou mais um carrossel". Inclui: abertura (primeiros 125 chars = mais visíveis antes do "ver mais"), corpo que complementa o carrossel sem repetir os slides palavra por palavra, CTA claro, e hashtags ao final. Máximo: 2.000 chars (manter margem de segurança).
 
 8. **Salvar em output/carousel-draft.md.** Formatar no padrão de output abaixo e salvar.
 
@@ -78,12 +78,14 @@ Salvar em `output/carousel-draft.md`:
 
 ## Quality Checklist (Auto-Verify Before Delivering)
 
-- [ ] Slide 1 tem dado específico com fonte — não afirmação vaga
+- [ ] Slide 1 tem dado específico com fonte, não afirmação vaga
 - [ ] Nenhum slide tem mais de 5 linhas visíveis
 - [ ] Cada slide conecta ao anterior com lógica clara
 - [ ] Existe slide de reflexão (penúltimo de conteúdo)
 - [ ] CTA menciona especificamente o conteúdo do carrossel
+- [ ] Follow CTA presente (slide de CTA e/ou legenda), amarrado a valor recorrente específico
 - [ ] Contagem de slides: entre 7 e 9
+- [ ] Legenda existe e transmite confiança e conhecimento real na área, não é genérica
 - [ ] Legenda abaixo de 2.000 caracteres
 - [ ] Hashtags ao final da legenda, não misturadas ao texto
 

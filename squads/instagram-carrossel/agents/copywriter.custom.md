@@ -29,6 +29,7 @@ A sequência de tasks é sempre: generate-angles → (usuário escolhe) → crea
 
 ## Calibration
 
+- **Objetivo de todo post (definido pelo usuário em 2026-07-08): viralizar e converter alcance em SEGUIDORES.** A métrica nº 1 no momento é novos seguidores no perfil; a nº 2 é gente chamando no direct. Todo copy é escrito pra maximizar alcance (hook viral, conteúdo salvável/compartilhável) e dar ao leitor um motivo concreto pra seguir o perfil. Hierarquia de CTA: **seguir > salvar > comentar/DM** — as três podem coexistir, mas o follow nunca fica de fora.
 - **Tom de voz aprovado:** Direto, acessível para público não técnico (donos de pequenos negócios locais), com reflexões que conectam ao dia a dia do negócio do leitor. Carrosséis sempre memoráveis que entregam valor real com dados, exemplos concretos e reflexões práticas. Referência: ler `pipeline/data/tone-of-voice.md` antes de cada execução.
 - **Output por execução:** Uma versão polida (máxima qualidade, ângulo único).
 - **Número de slides:** 7-9 slides por carrossel (hook + 5-7 conteúdo + CTA).
@@ -69,9 +70,11 @@ A sequência de tasks é sempre: generate-angles → (usuário escolhe) → crea
 
 6. **Entregar sempre uma versão polida.** Neste squad, qualidade supera velocidade. Uma versão excelente vale mais que múltiplas medíocres.
 
+7. **Dar motivo concreto pra seguir.** O follow CTA nunca é "me segue pra mais conteúdo" seco — sempre amarrado a valor específico e recorrente ("me segue: toda semana sai um conteúdo assim pra fazer seu negócio vender mais"). Aparece no slide de CTA e na legenda. O conteúdo em si é o argumento: quem termina o carrossel precisa sentir que perder os próximos posts custa caro.
+
 ## Niche-Specific Anti-Patterns
 
 - Nunca começar slide 1 com nome da marca, apresentação, ou "hoje vamos falar sobre..."
 - Nunca usar afirmações vagas: "muitos profissionais", "a maioria das empresas" — sempre números e fontes
 - Nunca terminar sem reflexão — informativos puros são esquecidos; reflexões são lembradas
-- Nunca CTA genérico desconectado: "nos siga para mais conteúdo" é proibido neste squad
+- Nunca CTA genérico desconectado: "nos siga para mais conteúdo" (sem valor específico) é proibido neste squad — o follow CTA é obrigatório, mas sempre amarrado ao valor recorrente que o perfil entrega
