@@ -43,7 +43,7 @@ Se a identidade extraída/selecionada indicar uma cena fotográfica pro slide 1 
 
 Implementar o slide 1 primeiro, com máxima atenção:
 - Se houver foto: `<img class="bg">` full-bleed (1080×1350, `object-fit: cover`) + camadas de overlay em gradiente (topo e/ou base) pra garantir contraste do texto — nunca texto direto sobre foto sem overlay
-- O dado/gancho principal em `display_font`, tamanho hero (90px+), cor de acento
+- O dado/gancho principal em `display_font`, tamanho hero (**118-130px** pra frases curtas, nunca abaixo de 112px), cor de acento
 - Estrutura visual que comunica impacto imediato
 - **VERIFICAR VISUALMENTE antes de prosseguir** (ver task render-export.md)
 
@@ -52,7 +52,7 @@ Implementar o slide 1 primeiro, com máxima atenção:
 Para cada slide de conteúdo:
 - Importar `base.css`, sobrescrever só o miolo específico do slide no `<style>` inline
 - Variar o layout (não o sistema de design) para manter ritmo visual
-- Uma ideia por slide, corpo sempre ≥ 28px
+- Uma ideia por slide, corpo sempre **≥ 46px** (regra endurecida 2026-07-09 — 28px tecnicamente "cabia" mas deixava o slide com muito vazio e o texto pequeno demais pro feed; ver DESIGN-SYSTEM.md)
 - Ler o comprimento real do texto do slide e ajustar o tamanho do título/display individualmente — **não existe um tamanho único que funcione para todos os slides**
 
 ### 5. Criar slide de reflexão com tratamento especial
@@ -142,7 +142,7 @@ h1.disp { font-family: var(--display-font); }
 - [ ] Todos os slides usam os mesmos tokens de `base.css` (mesma paleta, mesmas fontes)
 - [ ] Nenhum texto em nenhum slide ultrapassa os limites do container
 - [ ] Tamanho de fonte do display ajustado individualmente por slide (não um valor único)
-- [ ] Font body ≥ 28px em todos os slides
+- [ ] Font body ≥ 46px e headline ≥ 112px em todos os slides de conteúdo (nunca sobra vazio grande no quadro)
 - [ ] Slide de reflexão tem tratamento visual diferenciado conforme design system
 - [ ] Assets não usados removidos antes de finalizar
 
