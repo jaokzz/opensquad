@@ -13,6 +13,7 @@ Load these files before executing:
 - `squads/web-design-studio/output/wireframes.md` — wireframe aprovado
 - `squads/web-design-studio/output/design-system.md` — tokens de design
 - `pipeline/data/animation-playbook.md` — catálogo de padrões de animação (OBRIGATÓRIO)
+- skill `image-creator` — motor de renderização HTML→PNG via Playwright (OBRIGATÓRIO)
 
 ## Instructions
 
@@ -22,6 +23,9 @@ Load these files before executing:
 3. Para cada elemento animado, escolher um padrão do `animation-playbook.md` — nunca inventar fora do catálogo
 4. Especificar cada animação com valores exatos: elemento, trigger, propriedade, duration (ms), easing, delay
 5. Salvar o handoff completo em `output/mockup-handoff.md` (incluindo a seção de animation spec)
+6. **Construir um HTML/CSS estático autocontido** que monta a página inteira na ordem do wireframe, aplicando os tokens reais (cor, fonte, espaçamento) do design-system.md e o copy real do content-brief.md — sem animação (screenshot é estático), mas com o estado final de cada elemento
+7. Renderizar esse HTML via `image-creator`: screenshot full-page em viewport 1440px (desktop) e depois 390px (mobile), salvando em `output/mockup-preview/{cliente}-desktop.png` e `output/mockup-preview/{cliente}-mobile.png`
+8. Abrir e conferir as duas imagens antes de apresentar — se algo ficar feio, desproporcional ou genérico na imagem (mesmo que a spec em texto pareça correta), corrigir o HTML e re-renderizar antes do checkpoint
 
 ## Output Format
 
@@ -64,6 +68,7 @@ Duration: 1000ms | Easing: cubic-bezier(0.32, 0.72, 0, 1) | Delay: 200ms
 Rejeitar e redo if ANY are true:
 1. Qualquer animação especificada sem duration e easing exatos
 2. A versão mobile não estiver descrita para alguma seção
+3. O mockup for apresentado para aprovação sem as imagens PNG renderizadas (desktop + mobile) — texto sozinho não é suficiente
 
 ## Quality Criteria
 
@@ -71,3 +76,4 @@ Rejeitar e redo if ANY are true:
 - [ ] Todos os estados interativos definidos
 - [ ] Toda animação referencia um padrão do animation-playbook.md
 - [ ] Tokens do design-system.md aplicados consistentemente
+- [ ] `mockup-preview/{cliente}-desktop.png` e `-mobile.png` renderizados via image-creator e verificados visualmente antes do handoff
