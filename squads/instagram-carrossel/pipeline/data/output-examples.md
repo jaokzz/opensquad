@@ -5,6 +5,8 @@
 Exemplos completos de carrosséis que representam o nível de qualidade esperado.
 Use como referência de qualidade, não como template rígido.
 
+> **Aviso (2026-07-30):** os CTAs dos exemplos abaixo predatam a regra de **CTA único por post** (ver `copywriter.custom.md` e `create-slides.md`). Alguns slides de CTA aqui embaixo empilham mais de um ask (ex: "salva" + "comenta") — não copiar esse padrão. Usar os exemplos só como referência de tom/estrutura de slide de conteúdo, não do CTA final.
+
 ---
 
 ## Exemplo 1: Ângulo Revelador

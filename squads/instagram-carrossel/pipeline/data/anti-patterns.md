@@ -60,6 +60,16 @@ Cada agente deve consultar este arquivo antes de entregar seu output.
 
 ---
 
+### 5b. CTA empilhado — mais de um pedido no mesmo post (regra nova, 2026-07-30)
+❌ "Me segue pra mais dicas. Salva esse post. E comenta aqui embaixo o que achou!"
+❌ Slide de CTA pedindo "salva" + legenda pedindo "comenta uma palavra-chave" (dois asks diferentes no mesmo carrossel)
+
+**Por quê é prejudicial:** Cada pedido extra dilui a chance de qualquer um deles ser cumprido — o leitor não sabe qual ação importa de verdade e não faz nenhuma. Referência: framework de carrossel do Rafael Araújo ("CTA empilhado mata a ação").
+
+✅ Escolher UM ask (seguir, salvar ou comentar/DM) com base no que o post especificamente ganhou, e repetir o MESMO ask no slide final e na legenda.
+
+---
+
 ### 6. Mais de 3 linhas de texto visível por slide
 ❌ Parágrafos completos em slides de carrossel
 ❌ Mais de 4 pontos por slide
@@ -68,6 +78,16 @@ Cada agente deve consultar este arquivo antes de entregar seu output.
 **Por quê é prejudicial:** Carrosséis são consumidos em mobile, em movimento. Slides densos frustram o leitor e reduzem o tempo de swipe. Uma ideia por slide, expressa na menor quantidade de palavras possível.
 
 ✅ Máximo de 4-5 linhas visíveis. Uma ideia. Um impacto.
+
+---
+
+### 6b. Slide que só faz sentido dentro da sequência (regra nova, 2026-07-30)
+❌ Slide que começa com "Por isso..." ou "Além disso..." sem repetir o fato que sustenta a frase
+❌ Slide que só tem a metade de uma ideia, contando com o slide anterior pra completar o sentido
+
+**Por quê é prejudicial:** Muita gente vê carrossel por print solto compartilhado fora do Instagram (Stories de terceiros, WhatsApp, prints salvos). Se o slide não se sustenta fora do carrossel, ele perde alcance orgânico nesses compartilhamentos. Teste: "se alguém tirasse print só desse slide, ele ainda faz sentido?"
+
+✅ Cada slide de conteúdo carrega uma ideia completa, mesmo citando o tema em 1 palavra pra dar contexto mínimo.
 
 ---
 
@@ -123,3 +143,7 @@ Cada agente deve consultar este arquivo antes de entregar seu output.
 5. **Documente o sistema de design antes de criar o primeiro slide HTML** — Cores, fontes, espaçamento. Esse documento é o contrato visual entre todos os slides.
 
 6. **Garanta que o penúltimo slide de conteúdo tenha uma reflexão** — Não apenas informação. Uma pergunta, uma afirmação que incomodar, ou uma perspectiva que o leitor não tinha antes.
+
+7. **Inclua pelo menos um slide "que vale salvar"** — um framework, lista, checklist ou prompt concreto que o leitor queira guardar. É esse slide que justifica o "salva" quando esse for o CTA escolhido do post.
+
+8. **Escolha um CTA único e mantenha o mesmo no slide final e na legenda** — nunca empilhe seguir + salvar + comentar no mesmo post (ver item 5b acima).

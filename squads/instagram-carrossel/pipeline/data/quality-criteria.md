@@ -65,13 +65,23 @@ Cada critério é avaliado em escala 1-10.
 - 3-4: Tom errado. Muito formal, muito técnico/jargão, ou copy vazia sem substância.
 - 1-2: Tom completamente fora do padrão da marca.
 
-### C7: Follow Trigger (objetivo nº 1: seguidores — definido pelo usuário em 2026-07-08)
-**Pergunta:** O post dá um motivo concreto pra um desconhecido SEGUIR o perfil (não só salvar/comentar)?
-- 9-10: Conteúdo com valor evidente e recorrente + follow CTA específico no CTA e na legenda ("me segue: toda semana sai um conteúdo assim pra X"). Quem chegou pelo explore tem razão clara pra seguir.
-- 7-8: Follow CTA presente e específico, mas o valor recorrente do perfil poderia estar mais explícito.
-- 5-6: Follow CTA presente mas genérico, ou só na legenda.
-- 3-4: Nenhum follow CTA; o post otimiza só pra save/comentário.
-- 1-2: O post não dá razão nenhuma pra visitar o perfil.
+### C7: CTA Focus (atualizado 2026-07-30 — antes "Follow Trigger")
+**Pergunta:** O post tem UM pedido final claro e específico (não empilhado), escolhido pelo que aquele conteúdo especificamente ganhou?
+- 9-10: Um ask só (seguir, salvar ou comentar/DM), idêntico no slide de CTA e na legenda, claramente justificado pelo conteúdo do carrossel. Se o ask é seguir, vem amarrado a valor recorrente específico ("me segue: toda semana sai um conteúdo assim pra X").
+- 7-8: Um ask só, presente e específico, mas a justificativa poderia estar mais explícita.
+- 5-6: Um ask só mas genérico ("salve este post" sem contextualização).
+- 3-4: Dois asks empilhados no mesmo CTA (ex: "salva e comenta").
+- 1-2: Três asks empilhados ("segue + salva + comenta") ou nenhum CTA.
+
+**Veto condition:** Mais de um ask empilhado no CTA final ou na legenda → REJECT automático independente das demais notas.
+
+### C8: Screenshot Test (novo, 2026-07-30 — referência: framework de carrossel do Rafael Araújo)
+**Pergunta:** Cada slide de conteúdo (fora hook e CTA) faz sentido se alguém tirasse print dele isolado, sem ver o resto do carrossel?
+- 9-10: Todos os slides de conteúdo carregam uma ideia completa sozinhos. Qualquer um poderia circular como print solo e ainda entregar valor.
+- 7-8: Maioria dos slides passa no teste; um ou dois dependem levemente do slide anterior pra fazer sentido total.
+- 5-6: Metade dos slides só faz sentido dentro da sequência.
+- 3-4: Maioria dos slides é fragmento — frase cortada ao meio, referência a "isso" sem contexto.
+- 1-2: Nenhum slide funciona isolado; o carrossel só faz sentido lido do início ao fim sem pular nada.
 
 ---
 
